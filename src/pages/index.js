@@ -132,7 +132,7 @@ export default function Home() {
               <h2 className=" h2 text-start text-3xl font-semibold">
                 At Urban Laundry,
               </h2>
-              <p className="text-start text-xs mt-2">
+              <div className="text-start text-xs mt-2">
                 <h3 className="h3text-xl">
                   we offer top-notch cleaning services to keep your belongings
                   looking their best.{" "}
@@ -188,7 +188,7 @@ export default function Home() {
                 cleaning for your delicate fabrics, we&apos;ve got you covered.
                 Visit us today to experience the quality of our services for
                 yourself!
-              </p>
+              </div>
             </section>
             <div className="h-2 bg-purple-700"></div>
             <section

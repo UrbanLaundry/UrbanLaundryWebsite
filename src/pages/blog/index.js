@@ -8,8 +8,8 @@ export default function Blogs({ blogs }) {
     <main>
       <section className=" min-h-screen pt-20 pb-10 lg:pt-[120px] lg:pb-20 text-start bg-slate-800">
         <div className="container mx-auto">
-          <div className="-mx-4 flex flex-wrap justify-center">
-            <div className="w-full px-4">
+          <div className="flex flex-wrap justify-center">
+            <div className="w-full">
               <div className="mx-auto mb-[60px] max-w-[510px] text-center lg:mb-20">
                 <span className="text-blue-500 mb-2 block text-lg font-semibold">
                   Our Blogs
@@ -24,14 +24,10 @@ export default function Blogs({ blogs }) {
               </div>
             </div>
           </div>
-          <div className="-mx-4 grid grid-cols-1 md:grid-cols-3 ">
+          <div className="grid grid-cols-1 md:grid-cols-3 p-10 ">
             {blogs?.map((blog, key) => {
               return (
-                <Link
-                  key={key}
-                  href={blog?.link}
-                  className=" w-full h-full px-4"
-                >
+                <Link key={key} href={blog?.link} className=" w-full h-full">
                   <div className="mx-auto min-h-[55vh] mb-10 max-w-[370px] border rounded pb-2">
                     <div className="mb-8 overflow-hidden rounded">
                       <Image
@@ -46,18 +42,18 @@ export default function Blogs({ blogs }) {
                       <span className="bg-blue-500 mb-5 inline-block rounded py-1 px-4 text-center text-xs font-semibold leading-loose text-white">
                         {moment(blog?.pubDate).format("do MMM, YYYY")}
                       </span>
-                      <p>
+                      <div>
                         <div className="text-dark hover:text-blue-500 mb-4 inline-block text-base font-semibold">
                           {blog?.title}
                         </div>
-                      </p>
-                      <p className="text-body-color text-base grid grid-cols-3">
+                      </div>
+                      <div className="text-body-color text-base grid grid-cols-3">
                         {blog.categories.map((it, i) => (
                           <p key={i} className="pr-2 text-sm">
                             {it}
                           </p>
                         ))}
-                      </p>
+                      </div>
                     </div>
                   </div>
                 </Link>
