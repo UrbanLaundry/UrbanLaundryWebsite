@@ -2,20 +2,20 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer class="p-4 md:p-12 h-auto  w-screen relative bg-gray-900  self-end">
-      <div class="container mx-auto px-4">
-        <div class="flex flex-wrap text-left lg:text-left">
-          <div class="w-full lg:w-6/12 px-4">
-            <h4 class="text-xl md:text-3xl font-bold text-gray-100">
+    <footer className="p-4 md:p-12 h-auto  w-screen relative bg-gray-900  self-end">
+      <div className="container mx-auto px-4">
+        <div className="flex flex-wrap text-left lg:text-left">
+          <div className="w-full lg:w-6/12 px-4">
+            <h4 className="text-xl md:text-3xl font-bold text-gray-100">
               Let&apos;s keep in touch!
             </h4>
-            <h5 class="text-xs md:text-lg mt-2 mb-2 text-gray-300">
+            <h5 className="text-xs md:text-lg mt-2 mb-2 text-gray-300">
               Find us on any of these platforms, we respond 1-2 business days.
             </h5>
-            <div class="mt-6 lg:mb-0 mb-6 grid grid-cols-4 w-full md:w-1/3">
+            <div className="mt-6 lg:mb-0 mb-6 grid grid-cols-4 w-full md:w-1/3">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                class="h-5 w-5"
+                className="h-5 w-5"
                 fill="currentColor"
                 viewBox="0 0 24 24"
               >
@@ -23,7 +23,7 @@ export default function Footer() {
               </svg>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                class="h-5 w-5"
+                className="h-5 w-5"
                 fill="currentColor"
                 viewBox="0 0 24 24"
               >
@@ -31,7 +31,7 @@ export default function Footer() {
               </svg>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                class="h-5 w-5"
+                className="h-5 w-5"
                 fill="currentColor"
                 viewBox="0 0 24 24"
               >
@@ -39,7 +39,7 @@ export default function Footer() {
               </svg>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                class="h-5 w-5"
+                className="h-5 w-5"
                 fill="currentColor"
                 viewBox="0 0 24 24"
               >
@@ -47,16 +47,16 @@ export default function Footer() {
               </svg>
             </div>
           </div>
-          <div class="w-full lg:w-6/12 px-2 md:px-4">
-            <div class="flex flex-wrap items-top mb-6">
-              <div class="w-full lg:w-4/12 px-0 md:px-4 ml-auto">
-                <span class="block uppercase text-gray-500 text-sm font-semibold mb-2">
+          <div className="w-full lg:w-6/12 px-2 md:px-4">
+            <div className="flex flex-wrap items-top mb-6">
+              <div className="w-full lg:w-4/12 px-0 md:px-4 ml-auto">
+                <span className="block uppercase text-gray-500 text-sm font-semibold mb-2">
                   Useful Links
                 </span>
-                <ul class="list-unstyled">
+                <ul className="list-unstyled">
                   <li>
                     <Link
-                      class="text-gray-300 hover:text-gray-800 font-semibold block pb-2 text-sm"
+                      className="text-gray-300 hover:text-gray-800 font-semibold block pb-2 text-sm"
                       href="/#About"
                     >
                       About Us
@@ -64,7 +64,7 @@ export default function Footer() {
                   </li>
                   <li>
                     <Link
-                      class="text-gray-300 hover:text-gray-800 font-semibold block pb-2 text-sm"
+                      className="text-gray-300 hover:text-gray-800 font-semibold block pb-2 text-sm"
                       href="/blog"
                     >
                       Blog
@@ -72,14 +72,14 @@ export default function Footer() {
                   </li>
                   <li>
                     <Link
-                      class="text-gray-300 hover:text-gray-800 font-semibold block pb-2 text-sm"
+                      className="text-gray-300 hover:text-gray-800 font-semibold block pb-2 text-sm"
                       href="/faq"
                     >
                       FAQ
                     </Link>
                   </li>
                   <li>
-                    <a class="text-gray-300 hover:text-gray-800 font-semibold block pb-2 text-sm">
+                    <a className="text-gray-300 hover:text-gray-800 font-semibold block pb-2 text-sm">
                       Free Products
                     </a>
                   </li>
@@ -88,13 +88,13 @@ export default function Footer() {
             </div>
           </div>
         </div>
-        <hr class="my-6 border-gray-300" />
-        <div class="flex flex-wrap items-center md:justify-between justify-center">
-          <div class="w-full md:w-4/12 px-4 mx-auto text-center">
-            <div class="text-sm text-gray-500 font-semibold py-1">
+        <hr className="my-6 border-gray-300" />
+        <div className="flex flex-wrap items-center md:justify-between justify-center">
+          <div className="w-full md:w-4/12 px-4 mx-auto text-center">
+            <div className="text-sm text-gray-500 font-semibold py-1">
               Copyright ©{" "}
               <span id="get-current-year">{new Date().getFullYear()}</span>
-              <a class="text-gray-500 hover:text-gray-800" target="_blank">
+              <a className="text-gray-500 hover:text-gray-800" target="_blank">
                 {" "}
                 Urban Laundry.
               </a>

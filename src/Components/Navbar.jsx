@@ -69,23 +69,23 @@ export default function Navbar() {
             </li>
             <li>
               <Link
-                onClick={() => setNavActive("Services")}
-                href="/#Services"
+                onClick={() => setNavActive("about")}
+                href="/#about"
                 className="block py-2 pl-3 pr-4  rounded "
               >
                 <span
                   className={
-                    NavActive.match("Services")
+                    NavActive.match("about")
                       ? "text-white border-b"
                       : "text-slate-500"
                   }
                 >
                   {" "}
-                  Services
+                  About Us
                 </span>
               </Link>
             </li>
-            <li>
+            {/* <li>
               <Link
                 onClick={() => setNavActive("Pricing")}
                 href="/#Pricing"
@@ -102,21 +102,21 @@ export default function Navbar() {
                   Pricing
                 </span>
               </Link>
-            </li>
+            </li> */}
             <li>
               <Link
-                onClick={() => setNavActive("Get Franchises")}
-                href="/#Get Franchises"
+                onClick={() => setNavActive("Partner with Us")}
+                href="/#Partner with Us"
                 className="block py-2 pl-3 pr-4 "
               >
                 <span
                   className={
-                    NavActive.match("Get Franchises")
+                    NavActive.match("Partner with Us")
                       ? "text-white border-b"
                       : "text-slate-500"
                   }
                 >
-                  Get Franchises
+                  Partner with Us
                 </span>
               </Link>
             </li>
@@ -126,23 +126,31 @@ export default function Navbar() {
                 href="/blog"
                 className="block py-2 pl-3 pr-4 "
               >
-                <span className={"text-slate-500"}>Blog</span>
-              </Link>
-            </li>
-            <li>
-              <Link
-                onClick={() => setNavActive("Locate")}
-                href="/#Locate us"
-                className="block py-2 pl-3 pr-4 "
-              >
                 <span
                   className={
-                    NavActive.match("Locate")
+                    NavActive.match("blog")
                       ? "text-white border-b"
                       : "text-slate-500"
                   }
                 >
-                  Locate Us
+                  Blog
+                </span>
+              </Link>
+            </li>
+            <li>
+              <Link
+                onClick={() => setNavActive("contact")}
+                href="/#contact"
+                className="block py-2 pl-3 pr-4 "
+              >
+                <span
+                  className={
+                    NavActive.match("contact")
+                      ? "text-white border-b"
+                      : "text-slate-500"
+                  }
+                >
+                  Contact
                 </span>
               </Link>
             </li>

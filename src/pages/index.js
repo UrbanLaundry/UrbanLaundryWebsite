@@ -81,8 +81,144 @@ export default function Home() {
               priority
             />
             <section
-              className=" pt-20 flex flex-col-reverse md:grid md:grid-cols-2 w-full place-items-center"
               id="Services"
+              className="grid grid-cols-1 md:grid-cols-3 mt-10 md:mt-44 border-t-8 border-purple-500"
+            >
+              <div className="h-[30vh]  relative    md:h-[80vh] col-span-2 border-b-8 md:border-b-0 md:border-r-8 border-purple-600 ">
+                <Image
+                  className="top-0 absolute h-full w-full object-cover"
+                  src={washing_machine_hub}
+                  alt="washing machine app"
+                />
+                <div className=" absolute z-10 w-full h-full bg-gradient-to-b from-transparent to-black flex flex-col justify-end p-12 ">
+                  <h2 className=" h2 text-2xl md:text-5xl gradient_text">
+                    Get Spotless
+                  </h2>
+
+                  <p className=" text-green-400 text-sm md:text-2xl">
+                    and pressed clothes with just one call
+                  </p>
+                </div>
+              </div>
+
+              <div className="p-12 flex flex-col justify-start">
+                <div className="gradient_text">
+                  <p className=" text-yellow-400 text-2xl text-start font-medium">
+                    SPECIALIZED
+                  </p>
+                  <p className="text-yellow-400 text-5xl text-start font-light">
+                    SERVICES
+                  </p>
+                </div>
+
+                <p className="mt-4 text-start">
+                  • Dry Cleaning
+                  <br />
+                  • Laundry
+                  <br />
+                  • Steam Iron
+                  <br />
+                  <br />
+                  We are a one-stop solution for all your laundry needs. Our
+                  services range from basic laundry to steam ironing, shoe
+                  cleaning and even dry cleaning. Our commitment to providing
+                  high-quality services has made us a trusted name in the
+                  industry.
+                </p>
+              </div>
+            </section>
+            <div className="h-2 bg-purple-700"></div>
+            <section className="p-12 md:p-16 flex flex-col">
+              <h2 className=" h2 text-start text-3xl font-semibold">
+                At Urban Laundry,
+              </h2>
+              <p className="text-start text-xs mt-2">
+                <h3 className="h3text-xl">
+                  we offer top-notch cleaning services to keep your belongings
+                  looking their best.{" "}
+                </h3>
+                <br />
+                We are dedicated to providing you with the highest quality
+                laundry and cleaning services. With our commitment to
+                excellence, you can trust us to handle all of your laundry needs
+                with care and precision. Our team of experienced professionals
+                is equipped with the latest technology and techniques to ensure
+                that your items are handled with the utmost care and attention.
+                Whether you need a quick refresh or a deep clean, we&apos;ve got
+                you covered. We believe that our customers deserve only the
+                best, and we strive to deliver just that with every service we
+                provide. So why wait? Let us take care of your laundry needs
+                todav!
+                <br />
+                <br />
+                <br />
+                <strong className=" text-lime-500">
+                  Laundry Service :
+                </strong>{" "}
+                Our laundry service is desianed to provide vou with a
+                hassle-free and convenient solution for all vour evervdav
+                clothes. We use the latest technology and high-quality
+                detergents to ensure that your clothes are cleaned thoroughly
+                and are returned to you fresh and crisp.
+                <br />
+                <br />
+                <strong className=" text-lime-500">Dry Cleaning:</strong> Our
+                dry cleaning service is perfect for delicate fabrics that
+                require special care. Our team of experts uses a combination of
+                the latest technology and high-quality cleaning products to
+                clean your clothes, ensuring that they are returned to you in
+                pristine condition.
+                <br />
+                <br />
+                <strong className=" text-lime-500">Steam Ironing:</strong> Our
+                steam ironing service is perfect for those who want their
+                clothes to look as good as new. Our team of experts use the
+                latest steam ironing technology to remove all creases and
+                wrinkles from your clothes, leaving them looking freshly
+                pressed.
+                <br />
+                <br />
+                <br />
+                We believe in providing our customers with the best possible
+                experience. Our team of experts is trained to handle all types
+                of clothes and fabrics, ensuring that you receive the highest
+                quality of services every time. So, whether you need laundry
+                services for your everyday clothes, steam ironing for a special
+                occasion, shoe cleaning for your favorite pair of shoes, or dry
+                cleaning for your delicate fabrics, we&apos;ve got you covered.
+                Visit us today to experience the quality of our services for
+                yourself!
+              </p>
+            </section>
+            <div className="h-2 bg-purple-700"></div>
+            <section
+              id="Pricing"
+              className="pt-12 px-12 text-start grid grid-cols-1 md:grid-cols-2 border-b-8 border-purple-600"
+            >
+              <div className="py-4">
+                <p className="text-yellow-200 text-xl">SPECIALIZED</p>
+                <p className="text-yellow-300 text-4xl">PRICING</p>
+                <br />
+                <p className="text-white text-4xl md:text-6xl">AFFORDABLE</p>
+                <div>luxury at its finest - enjoy top-notch</div>
+                <div>laundry services for only</div>
+                <div className="flex items-center">
+                  <h2 className="h2 text-5xl md:text-6xl py-2">
+                    <Counter from={0} to={80} />
+                  </h2>
+                </div>
+                <p> with our wash and fold option </p>
+                <button className="mt-12 rounded-full">SCHEDULE PICK UP</button>
+              </div>
+              <Image
+                className="relative self-end"
+                src={ladyWithCloths4}
+                alt=""
+              />
+            </section>
+            <section
+              className=" pt-20 flex flex-col-reverse md:grid md:grid-cols-2 w-full place-items-center"
+              id="about"
             >
               <div className=" relative w-full h-full min-h-[45vh]">
                 <Image
@@ -156,7 +292,7 @@ export default function Home() {
                 </p>
               </div>
             </section>
-            <div className=" text-center w-full  h-28">
+            <div className=" text-center w-full  h-28  ">
               <div className="absolute z-20 bg-black w-full px-0 md:px-12 py-6 md:py-8  text-base md:text-4xl  tracking-[0.5rem] md:tracking-[1.3rem]">
                 EXPERIENCE THE ULTIMATE CLEAN
               </div>
@@ -228,143 +364,11 @@ export default function Home() {
               <Steps />
             </section>
             <div className="mt-5 h-2 bg-purple-600"></div>
-            <section className="grid grid-cols-1 md:grid-cols-3">
-              <div className="h-[30vh]  relative    md:h-[80vh] col-span-2 border-b-8 md:border-b-0 md:border-r-8 border-purple-600 ">
-                <Image
-                  className="top-0 absolute h-full w-full object-cover"
-                  src={washing_machine_hub}
-                  alt="washing machine app"
-                />
-                <div className=" absolute z-10 w-full h-full bg-gradient-to-b from-transparent to-black flex flex-col justify-end p-12 ">
-                  <h2 className=" h2 text-2xl md:text-5xl gradient_text">
-                    Get Spotless
-                  </h2>
 
-                  <p className=" text-green-400 text-sm md:text-2xl">
-                    and pressed clothes with just one call
-                  </p>
-                </div>
-              </div>
-
-              <div className="p-12 flex flex-col justify-start">
-                <div className="gradient_text">
-                  <p className=" text-yellow-400 text-2xl text-start font-medium">
-                    SPECIALIZED
-                  </p>
-                  <p className="text-yellow-400 text-5xl text-start font-light">
-                    SERVICES
-                  </p>
-                </div>
-
-                <p className="mt-4 text-start">
-                  • Dry Cleaning
-                  <br />
-                  • Laundry
-                  <br />
-                  • Steam Iron
-                  <br />
-                  <br />
-                  We are a one-stop solution for all your laundry needs. Our
-                  services range from basic laundry to steam ironing, shoe
-                  cleaning and even dry cleaning. Our commitment to providing
-                  high-quality services has made us a trusted name in the
-                  industry.
-                </p>
-              </div>
-            </section>
-            <div className="h-2 bg-purple-700"></div>
-            <section className="p-12 md:p-16 flex flex-col" id="Services">
-              <h2 className=" h2 text-start text-3xl font-semibold">
-                At Urban Laundry,
-              </h2>
-              <p className="text-start text-xs mt-2">
-                <h3 className="h3text-xl">
-                  we offer top-notch cleaning services to keep your belongings
-                  looking their best.{" "}
-                </h3>
-                <br />
-                We are dedicated to providing you with the highest quality
-                laundry and cleaning services. With our commitment to
-                excellence, you can trust us to handle all of your laundry needs
-                with care and precision. Our team of experienced professionals
-                is equipped with the latest technology and techniques to ensure
-                that your items are handled with the utmost care and attention.
-                Whether you need a quick refresh or a deep clean, we&apos;ve got
-                you covered. We believe that our customers deserve only the
-                best, and we strive to deliver just that with every service we
-                provide. So why wait? Let us take care of your laundry needs
-                todav!
-                <br />
-                <br />
-                <br />
-                <strong className=" text-lime-500">
-                  Laundry Service :
-                </strong>{" "}
-                Our laundry service is desianed to provide vou with a
-                hassle-free and convenient solution for all vour evervdav
-                clothes. We use the latest technology and high-quality
-                detergents to ensure that your clothes are cleaned thoroughly
-                and are returned to you fresh and crisp.
-                <br />
-                <br />
-                <strong className=" text-lime-500">Dry Cleaning:</strong> Our
-                dry cleaning service is perfect for delicate fabrics that
-                require special care. Our team of experts uses a combination of
-                the latest technology and high-quality cleaning products to
-                clean your clothes, ensuring that they are returned to you in
-                pristine condition.
-                <br />
-                <br />
-                <strong className=" text-lime-500">Steam Ironing:</strong> Our
-                steam ironing service is perfect for those who want their
-                clothes to look as good as new. Our team of experts use the
-                latest steam ironing technology to remove all creases and
-                wrinkles from your clothes, leaving them looking freshly
-                pressed.
-                <br />
-                <br />
-                <br />
-                We believe in providing our customers with the best possible
-                experience. Our team of experts is trained to handle all types
-                of clothes and fabrics, ensuring that you receive the highest
-                quality of services every time. So, whether you need laundry
-                services for your everyday clothes, steam ironing for a special
-                occasion, shoe cleaning for your favorite pair of shoes, or dry
-                cleaning for your delicate fabrics, we&apos;ve got you covered.
-                Visit us today to experience the quality of our services for
-                yourself!
-              </p>
-            </section>
-            <div className="h-2 bg-purple-700"></div>
-            <section
-              id="Pricing"
-              className="pt-12 px-12 text-start grid grid-cols-1 md:grid-cols-2"
-            >
-              <div className="py-4">
-                <p className="text-yellow-200 text-xl">SPECIALIZED</p>
-                <p className="text-yellow-300 text-4xl">PRICING</p>
-                <br />
-                <p className="text-white text-4xl md:text-6xl">AFFORDABLE</p>
-                <div>luxury at its finest - enjoy top-notch</div>
-                <div>laundry services for only</div>
-                <div className="flex items-center">
-                  <h2 className="h2 text-5xl md:text-6xl py-2">
-                    <Counter from={0} to={80} />
-                  </h2>
-                </div>
-                <p> with our wash and fold option </p>
-                <button className="mt-12 rounded-full">SCHEDULE PICK UP</button>
-              </div>
-              <Image
-                className="relative self-end"
-                src={ladyWithCloths4}
-                alt=""
-              />
-            </section>
             <div className=" h-2 bg-purple-700"></div>
             <section
               className="grid grid-cols-1 md:grid-cols-2 border-b-8 border-purple-700"
-              id="Get Franchises"
+              id="Partner with Us"
             >
               <div className="">
                 <Image className="aspect-[1368/960]" src={billboard} alt="" />
@@ -455,7 +459,7 @@ export default function Home() {
               <Image src={handshake} className="" alt="handshake" />
             </section>
             <section
-              id="Locate us"
+              id="contact"
               className="grid grid-cols-1 md:grid-cols-2 place-items-start pt-12 p-12 "
             >
               <div className="pt-12 flex flex-col justify-center text-start h-full">

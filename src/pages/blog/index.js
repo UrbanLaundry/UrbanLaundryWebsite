@@ -1,25 +1,9 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 
 import moment from "moment";
 import Link from "next/link";
 import Image from "next/image";
-export default function Blogs() {
-  const [blogs, setBlogs] = useState([]);
-  const fetchBlog = async () => {
-    const mediumURL =
-      "https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@mehulkothari05";
-    const response = await fetch(mediumURL, {
-      headers: {
-        "content-type": "application/text",
-      },
-    });
-    const data = await response.json();
-    setBlogs(data?.items);
-  };
-  useEffect(() => {
-    fetchBlog();
-  }, []);
-
+export default function Blogs({ blogs }) {
   return (
     <main>
       <section className=" min-h-screen pt-20 pb-10 lg:pt-[120px] lg:pb-20 text-start bg-slate-800">
@@ -63,12 +47,9 @@ export default function Blogs() {
                         {moment(blog?.pubDate).format("do MMM, YYYY")}
                       </span>
                       <p>
-                        <a
-                          href="javascript:void(0)"
-                          className="text-dark hover:text-blue-500 mb-4 inline-block text-base font-semibold"
-                        >
+                        <div className="text-dark hover:text-blue-500 mb-4 inline-block text-base font-semibold">
                           {blog?.title}
-                        </a>
+                        </div>
                       </p>
                       <p className="text-body-color text-base grid grid-cols-3">
                         {blog.categories.map((it, i) => (
@@ -87,4 +68,20 @@ export default function Blogs() {
       </section>
     </main>
   );
+}
+
+export async function getServerSideProps(context) {
+  const mediumURL =
+    "https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@mehulkothari05";
+  const response = await fetch(mediumURL, {
+    headers: {
+      "content-type": "application/text",
+    },
+  });
+  const data = await response.json();
+  return {
+    props: {
+      blogs: data?.items,
+    }, // will be passed to the page component as props
+  };
 }
