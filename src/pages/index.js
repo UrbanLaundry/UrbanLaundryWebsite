@@ -279,7 +279,7 @@ export default function Home() {
               </div>
             </section>
             <div className=" text-center w-full  h-28  ">
-              <div className="absolute z-20 bg-black w-full px-0 md:px-12 py-6 md:py-8  text-base md:text-4xl  tracking-[0.5rem] md:tracking-[1.3rem]">
+              <div className="absolute z-20 bg-black w-full px-0 md:px-12 py-6 md:py-8  text-base md:text-3xl  tracking-[0.5rem] md:tracking-[1.3rem]">
                 EXPERIENCE THE ULTIMATE CLEAN
               </div>
             </div>
