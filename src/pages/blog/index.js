@@ -24,7 +24,7 @@ export default function Blogs({ blogs }) {
               </div>
             </div>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 p-10 ">
+          <div className="grid grid-cols-1 md:grid-cols-3 p-10 gap-2 ">
             {blogs?.map((blog, key) => {
               return (
                 <Link
@@ -51,9 +51,12 @@ export default function Blogs({ blogs }) {
                           {blog?.title}
                         </div>
                       </div>
-                      <div className="text-body-color text-base grid grid-cols-3">
+                      <div className="text-body-color text-base flex flex-wrap gap-2 ">
                         {blog.categories.map((it, i) => (
-                          <p key={i} className="pr-2 text-sm">
+                          <p
+                            key={i}
+                            className="max-w-max pr-2 text-sm bg-gray-200 px-3 py-1 rounded-full text-black"
+                          >
                             {it}
                           </p>
                         ))}

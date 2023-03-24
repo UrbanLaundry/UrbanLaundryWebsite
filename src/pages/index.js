@@ -1,7 +1,6 @@
 import Image from "next/image";
 import { Inter } from "next/font/google";
-import { useState, useEffect } from "react";
-// import "./App.css";
+
 import wash from "@/assets/man_washing_machine.webp";
 import { motion } from "framer-motion";
 
@@ -34,14 +33,6 @@ import Counter from "@/Components/Counter";
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
-  const [hydrated, setHydrated] = useState(false);
-  useEffect(() => {
-    setHydrated(true);
-  }, []);
-  if (!hydrated) {
-    return null;
-  }
-
   return (
     <>
       <main>
