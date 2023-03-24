@@ -27,7 +27,11 @@ export default function Blogs({ blogs }) {
           <div className="grid grid-cols-1 md:grid-cols-3 p-10 ">
             {blogs?.map((blog, key) => {
               return (
-                <Link key={key} href={blog?.link} className=" w-full h-full">
+                <Link
+                  key={key}
+                  href={"/blog/" + blog?.title}
+                  className=" w-full h-full"
+                >
                   <div className="mx-auto min-h-[55vh] mb-10 max-w-[370px] border rounded pb-2">
                     <div className="mb-8 overflow-hidden rounded">
                       <Image
@@ -69,6 +73,7 @@ export default function Blogs({ blogs }) {
 export async function getServerSideProps(context) {
   const mediumURL =
     "https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@mehulkothari05";
+  //   // "https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@urbanlaundryblr";
   const response = await fetch(mediumURL, {
     headers: {
       "content-type": "application/text",
