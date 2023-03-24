@@ -1,8 +1,10 @@
 import React from "react";
+import MetaHead from "@/Components/MetaHead";
 
 export default function Blog({ blog }) {
   return (
     <main className="w-screen bg-gray-800 flex justify-center ">
+      <MetaHead title={blog.title + " | Urban Laundry"} />
       <div className="max-w-screen-lg ">
         <h2 className="text-2xl md:text-3xl text-center py-4 md:py-8 text-extrabold">
           {blog.title}

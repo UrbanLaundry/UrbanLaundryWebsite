@@ -7,6 +7,10 @@ export default function MetaHead({
   return (
     <Head>
       <title>{title}</title>
+      <link
+        rel="shortcut icon"
+        href="https://raw.githubusercontent.com/SnehasisDebbarman/urban-laundry-next-2/main/src/assets/logo-mark.png"
+      />
       <meta name="title" content={title} />
       <meta name="description" content={description} />
       <meta
@@ -31,7 +35,7 @@ export default function MetaHead({
       />
       <meta
         property="og:image"
-        content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png"
+        content="https://raw.githubusercontent.com/SnehasisDebbarman/urban-laundry-next-2/main/src/assets/meta_image.png"
       />
 
       <meta property="twitter:card" content="summary_large_image" />
@@ -46,7 +50,7 @@ export default function MetaHead({
       />
       <meta
         property="twitter:image"
-        content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png"
+        content="https://raw.githubusercontent.com/SnehasisDebbarman/urban-laundry-next-2/main/src/assets/meta_image.png"
       ></meta>
     </Head>
   );

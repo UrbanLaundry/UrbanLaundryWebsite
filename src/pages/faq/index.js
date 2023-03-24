@@ -2,6 +2,7 @@ import Image from "next/image";
 import React, { useState } from "react";
 
 import { motion, AnimatePresence } from "framer-motion";
+import MetaHead from "@/Components/MetaHead";
 
 const faqData = [
   {
@@ -101,6 +102,7 @@ export const Accordion = ({ title, content, id }) => {
 export default function Faq() {
   return (
     <main>
+      <MetaHead title="  Frequently Asked Questions | Urban Laundry" />
       <section class="relative pt-6 md:pt-24 pb-28 bg-blueGray-50 overflow-hidden">
         <Image
           width={200}

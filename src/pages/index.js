@@ -29,6 +29,7 @@ import landingText from "@/assets/icons/landing_page_text.png";
 
 import Steps from "@/Components/Steps";
 import Counter from "@/Components/Counter";
+import MetaHead from "@/Components/MetaHead";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -36,6 +37,7 @@ export default function Home() {
   return (
     <>
       <main>
+        <MetaHead />
         <div className="">
           <main className="">
             <section className=" grid grid-cols-1 md:grid-cols-2 mt-20" id="">

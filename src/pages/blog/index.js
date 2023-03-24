@@ -3,9 +3,11 @@ import React from "react";
 import moment from "moment";
 import Link from "next/link";
 import Image from "next/image";
+import MetaHead from "@/Components/MetaHead";
 export default function Blogs({ blogs }) {
   return (
     <main>
+      <MetaHead title="Blogs | Urban Laundry" />
       <section className=" min-h-screen pt-20 pb-10 lg:pt-[120px] lg:pb-20 text-start bg-slate-800">
         <div className="container mx-auto">
           <div className="flex flex-wrap justify-center">
