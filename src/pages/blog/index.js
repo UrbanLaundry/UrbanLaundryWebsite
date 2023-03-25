@@ -77,8 +77,8 @@ export default function Blogs({ blogs }) {
 
 export async function getServerSideProps(context) {
   const mediumURL =
-    "https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@mehulkothari05";
-  //   // "https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@urbanlaundryblr";
+    // "https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@mehulkothari05";
+    "https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@urbanlaundryblr";
   const response = await fetch(mediumURL, {
     headers: {
       "content-type": "application/text",

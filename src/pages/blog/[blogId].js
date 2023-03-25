@@ -20,7 +20,8 @@ export default function Blog({ blog }) {
 
 export async function getStaticProps({ params }) {
   const res = await fetch(
-    "https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@mehulkothari05"
+    // "https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@mehulkothari05"
+    "https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@urbanlaundryblr"
   );
   const blogs = (await res.json()).items;
 
@@ -39,7 +40,8 @@ export async function getStaticProps({ params }) {
 
 export async function getStaticPaths() {
   const res = await fetch(
-    " https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@mehulkothari05"
+    // " https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@mehulkothari05"
+    "https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@urbanlaundryblr"
   );
   const blogs = await res.json();
 
