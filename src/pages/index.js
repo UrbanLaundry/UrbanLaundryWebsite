@@ -119,7 +119,7 @@ export default function Home() {
                   </p>
                 </div>
 
-                <p className="mt-4 text-start text-base md:text-xs">
+                <p className="mt-4 text-start text-base md:text-base">
                   • Dry Cleaning
                   <br />
                   • Laundry

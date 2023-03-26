@@ -6,11 +6,11 @@ export default function Blog({ blog }) {
     <main className="w-screen bg-gray-800 flex justify-center ">
       <MetaHead title={blog.title + " | Urban Laundry"} />
       <div className="max-w-screen-lg ">
-        <h2 className="text-2xl md:text-3xl text-center py-4 md:py-8 text-extrabold">
+        <h2 className="text-2xl md:text-3xl text-center py-4 md:py-8 font-extrabold">
           {blog.title}
         </h2>
         <div
-          className="prose prose-code:bg-gray-200 w-screen md:w-full p-5 md:max-w-screen-lg prose-pre:bg-gray-500 prose-img:w-[70%] prose-img:mx-auto prose-headings:text-gray-100 prose-headings:font-extrabold prose-headings:text-3xl prose-p:text-gray-400  prose-a:text-blue-300 prose-strong:text-blue-100 prose-li:text-gray-300 "
+          className="prose prose-code:bg-gray-200 w-screen md:w-full p-5 md:max-w-screen-lg prose-pre:bg-gray-500 prose-img:w-[70%] prose-img:mx-auto prose-headings:text-gray-100 prose-h2:font-black  prose-headings:text-3xl prose-p:text-gray-400  prose-a:text-blue-300 prose-strong:text-blue-100 prose-li:text-gray-300 "
           dangerouslySetInnerHTML={{ __html: blog.description }}
         />
       </div>
@@ -20,7 +20,6 @@ export default function Blog({ blog }) {
 
 export async function getStaticProps({ params }) {
   const res = await fetch(
-    // "https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@mehulkothari05"
     "https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@urbanlaundryblr"
   );
   const blogs = (await res.json()).items;

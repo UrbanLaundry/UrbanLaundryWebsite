@@ -104,13 +104,13 @@ export default function Faq() {
     <main>
       <MetaHead title="  Frequently Asked Questions | Urban Laundry" />
       <section class="relative pt-6 md:pt-24 pb-28 bg-blueGray-50 overflow-hidden">
-        <Image
+        {/* <Image
           width={200}
           height={200}
           class="absolute bottom-0 left-1/2 transform -translate-x-1/2"
           src="flaro-assets/images/faqs/gradient.svg"
           alt=""
-        />
+        /> */}
         <div class="relative z-10 container px-4 mx-auto">
           <div class="md:max-w-4xl mx-auto">
             <p class="mb-7 text-sm text-indigo-600 text-center font-semibold uppercase tracking-px">

@@ -4,7 +4,17 @@ import moment from "moment";
 import Link from "next/link";
 import Image from "next/image";
 import MetaHead from "@/Components/MetaHead";
+import LOGO from "@/assets/LOGO.webp";
 export default function Blogs({ blogs }) {
+  //write a function that only select img url that has popular image extension
+  const getImgUrl = (url) => {
+    const imgExtensions = ["jpg", "jpeg", "png", "gif", "svg"];
+    const imgExtension = url.split(".").pop();
+    if (imgExtensions.includes(imgExtension)) {
+      return url;
+    }
+    return LOGO;
+  };
   return (
     <main>
       <MetaHead title="Blogs | Urban Laundry" />
@@ -35,13 +45,13 @@ export default function Blogs({ blogs }) {
                   className=" w-full h-full"
                 >
                   <div className="mx-auto min-h-[55vh] mb-10 max-w-[370px] border rounded pb-2">
-                    <div className="mb-8 overflow-hidden rounded">
+                    <div className="mb-8 overflow-hidden rounded bg-slate-900">
                       <Image
                         width={200}
                         height={200}
-                        src={blog?.thumbnail}
+                        src={getImgUrl(blog?.thumbnail)}
                         alt="image"
-                        className="w-full aspect-video"
+                        className="w-full aspect-video object-contain px-6"
                       />
                     </div>
                     <div className="p-4">
