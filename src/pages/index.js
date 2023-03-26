@@ -56,22 +56,22 @@ export default function Home() {
                     srcSet=""
                   /> */}
                   <h2>
-                    <p className="text-xs md:text-sm lg:text-base xl:text-2xl   bg-gradient-to-br from-[#FBFF1D] to-[#E9FF46] bg-clip-text text-transparent tracking-widest ">
+                    <p className="text-xs md:text-sm lg:text-base xl:text-xl   bg-gradient-to-br from-[#FBFF1D] to-[#E9FF46] bg-clip-text text-transparent tracking-widest ">
                       {" "}
                       <strong className="font-bold bg-gradient-to-br from-[#FBFF1D] to-[#E9FF46] bg-clip-text text-transparent tracking-widest ">
                         EXPERIENCE
                       </strong>{" "}
                       EFFORTLESS AND
                     </p>
-                    <p className="text-xs md:text-sm lg:text-base xl:text-2xl  bg-gradient-to-b from-[#B8E66E] to-[#9CDC81] bg-clip-text text-transparent tracking-widest pt-1">
+                    <p className="text-xs md:text-sm lg:text-base xl:text-xl  bg-gradient-to-b from-[#B8E66E] to-[#9CDC81] bg-clip-text text-transparent tracking-widest pt-1">
                       {" "}
                       PRISTINE CLEAN CLOTHES WITH
                     </p>
-                    <p className="text-2xl md:text-2xl lg:text-4xl xl:text-5xl font-bold bg-gradient-to-b from-[#72C88E] to-[#37AE8E] bg-clip-text text-transparent md:pb-4 mb-4 md:mb-4 underline decoration-2 underline-offset-4 md:underline-offset-[1rem] decoration-[#ABA63B]">
+                    <p className="text-2xl md:text-2xl lg:text-4xl xl:text-4xl font-bold bg-gradient-to-b from-[#72C88E] to-[#37AE8E] bg-clip-text text-transparent md:pb-4 mb-4 md:mb-4 underline decoration-2 underline-offset-4 md:underline-offset-[1rem] decoration-[#ABA63B]">
                       {" "}
                       URBAN LAUNDRY
                     </p>
-                    <p className="text-xs md:text-base lg:text-lg xl:text-2xl h3 font-semibold md:mr-12">
+                    <p className="text-xs md:text-base lg:text-lg xl:text-xl h3 font-semibold md:mr-12">
                       The One-Stop Solution For Dry Cleaning, Laundry, and Steam
                       Iron Services
                     </p>
