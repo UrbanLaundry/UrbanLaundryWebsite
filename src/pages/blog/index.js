@@ -4,7 +4,7 @@ import moment from "moment";
 import Link from "next/link";
 import Image from "next/image";
 import MetaHead from "@/Components/MetaHead";
-import LOGO from "@/assets/LOGO.webp";
+import LOGO from "@/assets/LOGO.png";
 export default function Blogs({ blogs }) {
   //write a function that only select img url that has popular image extension
   const getImgUrl = (url) => {

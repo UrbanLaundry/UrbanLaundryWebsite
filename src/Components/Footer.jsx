@@ -79,9 +79,12 @@ export default function Footer() {
                     </Link>
                   </li>
                   <li>
-                    <a className="text-gray-300 hover:text-gray-800 font-semibold block pb-2 text-sm">
-                      Free Products
-                    </a>
+                    <Link
+                      href={"/franchise"}
+                      className="text-gray-300 hover:text-gray-800 font-semibold block pb-2 text-sm"
+                    >
+                      Franchise
+                    </Link>
                   </li>
                 </ul>
               </div>
