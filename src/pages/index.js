@@ -203,28 +203,34 @@ export default function Home() {
                 alt=""
               />
             </section>
+            <div className=" p-8">
+              <h2 className="text-center gradient_text  text-xl md:text-6xl font-medium">
+                Our Story!
+              </h2>
+
+              <br />
+              <p className="text-xs md:text-base indent-4">
+                {`The idea of entering laundry business started in October 2019 when our founder’s wife shared her experience with local dry-cleaning stores on the timelines, delays, damages caused and unsatisfactory output, with him. Being a NRI, having worked in many countries, he wondered about the gap or lack of advancement or quality experienced there versus, In India. This made him to think and research around Laundry and Drycleaning industry. He figured that there were less than 1% of Dry-Cleaning stores in any major city that make up to global standards by using dry cleaning machinery, other systems and processes. This <p 1% may include five-star hotels, some big laundry chains. He also figured that some were and are still using perc based machinery that is banned in United States due to the fact that, those chemicals are of carcinogenic in nature and harmful to human skin. Additionally, research showed that there is neither proper process nor good chemicals utilized by many of these Drycleaning shops. May be people think anything can be done in India or take people for granted that as long as price is maintained low, any malformed practices can be followed at backend (some of which are processing clothes at dhobi ghats, iron and deliver, usage of unnamed, unproven chemicals for dry cleaning, or just not dry cleaning at all by doing spot cleaning or spraying of some chemical and iron). A man of perfection, he wanted to change these practices within laundry industry by adapting superior process and great quality with Speed. `}
+                <br />
+                <br />
+                <p className="indent-4">
+                  {` He then spoke about this idea with his family and started “The Urban Laundry” in Rajajinagar, Bengaluru. Being a Chemical Engineer by profession and having heavy Industries background throughout his career helped him setup the store from scratch and establish great processes including Quality checks, optimal machinery utilization and by training available workforce without Laundry experience in a very quick time. He proudly says our customers love Speed with quality which has differentiated us from other players. We were industry first to offer Laundry and drycleaning in two days for no extra charge unlike others. Impressed by quality and speed many customers started coming from different areas across Bangalore. Many of our customers in fact asked us to open stores in nearby areas so that it helps their friends and Family. `}
+                </p>
+              </p>
+            </div>
             <section
-              className=" pt-20 flex flex-col-reverse md:grid md:grid-cols-2 w-full place-items-center"
+              className=" pt-5 flex flex-col-reverse md:grid md:grid-cols-2 w-full "
               id="about"
             >
               <div className=" relative w-full h-full min-h-[45vh]">
                 <Image
-                  className="z-10 absolute px-12 md:px-12 py-0  -bottom-20 md:-bottom-28"
+                  className="z-10 absolute px-12 md:px-24 -bottom-12 md:-bottom-20"
                   src={ladyWithCloths1}
                   alt=""
                 />
               </div>
-
-              <div className=" text-left p-8 pb-8">
-                <h2 className="h2 text-2xl md:text-4xl">Our Story!</h2>
-                <br />
-
-                <br />
-
-                <p className="text-xs md:text-sm text-gray-300">
-                  {`The idea of entering laundry business started in October 2019 when our founder’s wife shared her experience with local dry-cleaning stores on the timelines, delays, damages caused and unsatisfactory output, with him. Being a NRI, having worked in many countries, he wondered about the gap or lack of advancement or quality experienced there versus, In India. This made him to think and research around Laundry and Drycleaning industry. He figured that there were less than 1% of Dry-Cleaning stores in any major city that make up to global standards by using dry cleaning machinery, other systems and processes. This <p 1% may include five-star hotels, some big laundry chains. He also figured that some were and are still using perc based machinery that is banned in United States due to the fact that, those chemicals are of carcinogenic in nature and harmful to human skin. Additionally, research showed that there is neither proper process nor good chemicals utilized by many of these Drycleaning shops. May be people think anything can be done in India or take people for granted that as long as price is maintained low, any malformed practices can be followed at backend (some of which are processing clothes at dhobi ghats, iron and deliver, usage of unnamed, unproven chemicals for dry cleaning, or just not dry cleaning at all by doing spot cleaning or spraying of some chemical and iron). A man of perfection, he wanted to change these practices within laundry industry by adapting superior process and great quality with Speed. `}
-                  <br />
-                  <br />
+              <div className="flex text-left  p-8 pt-0">
+                <p className="text-xs md:text-base  indent-4">
                   {` He then spoke about this idea with his family and started “The Urban Laundry” in Rajajinagar, Bengaluru. Being a Chemical Engineer by profession and having heavy Industries background throughout his career helped him setup the store from scratch and establish great processes including Quality checks, optimal machinery utilization and by training available workforce without Laundry experience in a very quick time. He proudly says our customers love Speed with quality which has differentiated us from other players. We were industry first to offer Laundry and drycleaning in two days for no extra charge unlike others. Impressed by quality and speed many customers started coming from different areas across Bangalore. Many of our customers in fact asked us to open stores in nearby areas so that it helps their friends and Family. `}
                 </p>
               </div>
@@ -321,7 +327,7 @@ export default function Home() {
                   </p>
                 </div>
 
-                <p className="text-xs md:text-xs text-gray-300">
+                <p className="text-xs md:text-base text-gray-300 indent-4">
                   Are you looking for a low-cost, high-return business
                   opportunity that can offer you flexible hours and a great
                   work-life balance? Look no further! Our company is now
@@ -336,57 +342,67 @@ export default function Home() {
                 </p>
               </div>
             </section>
-            <section className="grid grid-cols-1 md:grid-cols-2 text-start">
-              <div className="p-8  md:py-20 md:pl-20 border-l-4 border-purple-700 flex flex-col">
-                <div className="gradient_text mb-5">
-                  <p className=" to-yellow-500 text-3xl text-start font-bold">
-                    Why should you partner/Franchise with Urban Laundry?
-                  </p>
-                </div>
+            <div className="p-8  md:pt-20 md:pl-20 border-l-4 border-purple-700 flex flex-col">
+              <div className="gradient_text mb-5">
+                <p className=" to-yellow-500 text-3xl text-start font-bold">
+                  Why should you partner/Franchise with Urban Laundry?
+                </p>
+              </div>
 
-                <p className="text-xs md:text-sm text-gray-300">
-                  Having Served thousands of customers in Laundry industry for
-                  last 3 years (during and post covid), it was our customers
-                  that sparked this idea in us, to expand our services to
-                  different areas within the city. In fact, some of our
-                  customers, having liked our concept and services, expressed
-                  interest to take franchise from us, so that they can service
-                  other customers within their area. After evaluating different
-                  models and addressing some of the core issues that we
-                  anticipated may be blockers to scale in this business, we
-                  started to open up for Partners (Laundroprenuers). With Trust,
-                  Hygiene, Quality and Speed being our Core Values, we are
-                  sticking to our current model of operating Laundry and
-                  Drycleaning stores onsite/Live. We believe, this helps in
-                  building trust with our customers by providing transparency
-                  into how their clothes are getting processed right in front of
-                  them in hygienic environment, at speed. For entrepreneurs
-                  interested in partnering with us, we are right there along
-                  with them throughout their journey. We help in location
-                  appraisal, store setup (by providing state of Art machinery
-                  along with Eco friendly chemicals), CRM software (for Customer
-                  order bookings and reporting). We also handle Branding,
-                  Corporate Marketing, Training workforce and any other support
-                  to make the partner successful in delivering our core values
-                  to customer. We are proud to say that our Franchising fee is
-                  one of the lowest in Industry when compared to other
-                  competitors who are charging around 8 to 10 percent on Sales,
-                  whereas we ought to charge just 5.49 percent on Gross.
-                  Additionally, We want to respect wisdom of senior citizens and
-                  also help our women Entrepreneurs in establishing themselves
-                  in this Industry by offering additional discount of 0.24
-                  percent. We believe in giving back in some shape or form to
-                  the community, for example, by making a partner successful,
+              <p className="text-xs md:text-base text-gray-300 indent-4">
+                Having Served thousands of customers in Laundry industry for
+                last 3 years (during and post covid), it was our customers that
+                sparked this idea in us, to expand our services to different
+                areas within the city. In fact, some of our customers, having
+                liked our concept and services, expressed interest to take
+                franchise from us, so that they can service other customers
+                within their area. After evaluating different models and
+                addressing some of the core issues that we anticipated may be
+                blockers to scale in this business, we started to open up for
+                Partners (Laundroprenuers). With Trust, Hygiene, Quality and
+                Speed being our Core Values, we are sticking to our current
+                model of operating Laundry and Drycleaning stores onsite/Live.
+                We believe, this helps in building trust with our customers by
+                providing transparency into how their clothes are getting
+                processed right in front of them in hygienic environment, at
+                speed.
+                <br />
+                <br /> For entrepreneurs interested in partnering with us, we
+                are right there along with them throughout their journey. We
+                help in location appraisal, store setup (by providing state of
+                Art machinery along with Eco friendly chemicals), CRM software
+                (for Customer order bookings and reporting). We also handle
+                Branding, Corporate Marketing, Training workforce and any other
+                support to make the partner successful in delivering our core
+                values to customer.
+              </p>
+            </div>
+            <section className="grid grid-cols-1 md:grid-cols-2 text-start">
+              <div className="p-8  md:pb-20 md:pl-20 border-l-4 border-purple-700 flex flex-col">
+                <p className="text-xs md:text-base text-gray-300 indent-4">
+                  We are proud to say that our Franchising fee is one of the
+                  lowest in Industry when compared to other competitors who are
+                  charging around 8 to 10 percent on Sales, whereas we ought to
+                  charge just{" "}
+                  <strong className="font-semibold underline decoration-indigo-500">
+                    5.49 percent
+                  </strong>{" "}
+                  on Gross. Additionally, We want to respect wisdom of senior
+                  citizens and also help our women Entrepreneurs in establishing
+                  themselves in this Industry by offering additional discount of
+                  0.24 percent. , <br />
+                  <br /> We believe in giving back in some shape or form to the
+                  community, for example, by making a partner successful,
                   greater good is happening by giving them financial
                   freedom/additional recurring income, providing employment
                   opportunity to partner and other staff members and also
-                  bringing quality of living in many customer&apos;s life by
-                  either saving their time with laundry so that they can focus
-                  their efforts elsewhere or by providing them quality and
-                  longevity of clothes they wear . So with help of Urban Laundry
-                  now, every person can become a Laundroprenuer by providing
-                  quality and speed to customers and also having more profits
-                  due to our lowest fees.
+                  bringing quality of living in many customer’s life by either
+                  saving their time with laundry so that they can focus their
+                  efforts elsewhere or by providing them quality and longevity
+                  of clothes they wear . <br />
+                  <br /> So with help of Urban Laundry now, every person can
+                  become a Laundroprenuer by providing quality and speed to
+                  customers and also having more profits due to our lowest fees.
                 </p>
 
                 <button className="rounded-full mt-5 max-w-max">
