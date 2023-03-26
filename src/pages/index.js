@@ -47,31 +47,52 @@ export default function Home() {
                   initial={{ opacity: 0, scale: 0.5 }}
                   animate={{ opacity: 1, scale: 1 }}
                   transition={{ duration: 0.5 }}
-                  className="p-10 md:p-28 flex justify-center "
+                  className="p-10 pt-12 md:p-12 lg:p-16 xl:p-28 flex justify-center "
                 >
-                  <Image
+                  {/* <Image
                     className="self-center w-full"
                     src={landingText}
                     alt="EXPERIENCE EFFORTLESS AND PRISTINE CLEAN CLOTHES WITH URBAN LAUNDRY"
                     srcSet=""
-                  />
+                  /> */}
+                  <h2>
+                    <p className="text-xs md:text-sm lg:text-base xl:text-2xl   bg-gradient-to-br from-[#FBFF1D] to-[#E9FF46] bg-clip-text text-transparent tracking-widest ">
+                      {" "}
+                      <strong className="font-bold bg-gradient-to-br from-[#FBFF1D] to-[#E9FF46] bg-clip-text text-transparent tracking-widest ">
+                        EXPERIENCE
+                      </strong>{" "}
+                      EFFORTLESS AND
+                    </p>
+                    <p className="text-xs md:text-sm lg:text-base xl:text-2xl  bg-gradient-to-b from-[#B8E66E] to-[#9CDC81] bg-clip-text text-transparent tracking-widest pt-1">
+                      {" "}
+                      PRISTINE CLEAN CLOTHES WITH
+                    </p>
+                    <p className="text-2xl md:text-2xl lg:text-4xl xl:text-5xl font-bold bg-gradient-to-b from-[#72C88E] to-[#37AE8E] bg-clip-text text-transparent md:pb-4 mb-4 md:mb-4 underline decoration-2 underline-offset-4 md:underline-offset-[1rem] decoration-[#ABA63B]">
+                      {" "}
+                      URBAN LAUNDRY
+                    </p>
+                    <p className="text-xs md:text-base lg:text-lg xl:text-2xl h3 font-semibold md:mr-12">
+                      The One-Stop Solution For Dry Cleaning, Laundry, and Steam
+                      Iron Services
+                    </p>
+                  </h2>
                 </motion.div>
               </div>
-              <div className="px-8 pt-8 grid place-items-center md:p-16 ">
+              <div className="px-8 pt-8 grid place-items-center md:p-12 lg:p-16 ">
                 <Image className="w-1/2 md:w-1/2" src={wash} alt="" />
               </div>
             </section>
             <Image
               src={wave2}
-              className="-mt-[5rem] md:-mt-[200px]"
+              className="-mt-[4rem] md:-mt-32 lg:-mt-44 xl:-mt-[230px]"
               alt=""
               priority
             />
             <section
               id="Services"
-              className="grid grid-cols-1 md:grid-cols-3 mt-10 md:mt-44 border-t-8 border-purple-500"
+              className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-10 md:mt-44 border-t-8 border-purple-500"
             >
-              <div className="h-[30vh]  relative    md:h-[80vh] col-span-2 border-b-8 md:border-b-0 md:border-r-8 border-purple-600 ">
+              <div className="h-[30vh]  relative    md:h-[80vh] lg:col-span-2 border-b-8 md:border-b-0 md:border-r-8 border-purple-600 ">
                 <Image
                   className="top-0 absolute h-full w-full object-cover"
                   src={washing_machine_hub}
@@ -90,15 +111,15 @@ export default function Home() {
 
               <div className="p-12 flex flex-col justify-start">
                 <div className="gradient_text">
-                  <p className=" text-yellow-400 text-2xl text-start font-medium">
+                  <p className=" text-yellow-400 text-2xl md:text-base lg:text-2xl text-start font-medium">
                     SPECIALIZED
                   </p>
-                  <p className="text-yellow-400 text-5xl text-start font-light">
+                  <p className="text-yellow-400 text-5xl md:text-3xl lg:text-5xl text-start font-light">
                     SERVICES
                   </p>
                 </div>
 
-                <p className="mt-4 text-start">
+                <p className="mt-4 text-start text-base md:text-xs">
                   • Dry Cleaning
                   <br />
                   • Laundry
@@ -107,10 +128,10 @@ export default function Home() {
                   <br />
                   <br />
                   We are a one-stop solution for all your laundry needs. Our
-                  services range from basic laundry to steam ironing, shoe
-                  cleaning and even dry cleaning. Our commitment to providing
-                  high-quality services has made us a trusted name in the
-                  industry.
+                  services range from basic laundry (wash n fold, wash n iron)
+                  to steam ironing and dry cleaning of all types of apparel and
+                  home linens. Our commitment to providing high-quality services
+                  has made us a trusted name in the industry.
                 </p>
               </div>
             </section>
@@ -119,8 +140,8 @@ export default function Home() {
               <h2 className=" h2 text-start text-3xl font-semibold">
                 At Urban Laundry,
               </h2>
-              <div className="text-start text-xs mt-2">
-                <h3 className="h3text-xl">
+              <div className="text-start text-xs md:text-base mt-2">
+                <h3 className="h3 text-xl">
                   we offer top-notch cleaning services to keep your belongings
                   looking their best.{" "}
                 </h3>
@@ -204,19 +225,19 @@ export default function Home() {
               />
             </section>
             <div className=" p-8">
-              <h2 className="text-center gradient_text  text-xl md:text-6xl font-medium">
+              <h2 className="text-center gradient_text  text-xl md:text-4xl lg:text-6xl font-medium">
                 Our Story!
               </h2>
 
               <br />
-              <p className="text-xs md:text-base indent-4">
+              <div className="text-xs lg:text-base indent-4">
                 {`The idea of entering laundry business started in October 2019 when our founder’s wife shared her experience with local dry-cleaning stores on the timelines, delays, damages caused and unsatisfactory output, with him. Being a NRI, having worked in many countries, he wondered about the gap or lack of advancement or quality experienced there versus, In India. This made him to think and research around Laundry and Drycleaning industry. He figured that there were less than 1% of Dry-Cleaning stores in any major city that make up to global standards by using dry cleaning machinery, other systems and processes. This <p 1% may include five-star hotels, some big laundry chains. He also figured that some were and are still using perc based machinery that is banned in United States due to the fact that, those chemicals are of carcinogenic in nature and harmful to human skin. Additionally, research showed that there is neither proper process nor good chemicals utilized by many of these Drycleaning shops. May be people think anything can be done in India or take people for granted that as long as price is maintained low, any malformed practices can be followed at backend (some of which are processing clothes at dhobi ghats, iron and deliver, usage of unnamed, unproven chemicals for dry cleaning, or just not dry cleaning at all by doing spot cleaning or spraying of some chemical and iron). A man of perfection, he wanted to change these practices within laundry industry by adapting superior process and great quality with Speed. `}
                 <br />
                 <br />
                 <p className="indent-4">
                   {` He then spoke about this idea with his family and started “The Urban Laundry” in Rajajinagar, Bengaluru. Being a Chemical Engineer by profession and having heavy Industries background throughout his career helped him setup the store from scratch and establish great processes including Quality checks, optimal machinery utilization and by training available workforce without Laundry experience in a very quick time. He proudly says our customers love Speed with quality which has differentiated us from other players. We were industry first to offer Laundry and drycleaning in two days for no extra charge unlike others. Impressed by quality and speed many customers started coming from different areas across Bangalore. Many of our customers in fact asked us to open stores in nearby areas so that it helps their friends and Family. `}
                 </p>
-              </p>
+              </div>
             </div>
             <section
               className=" pt-5 flex flex-col-reverse md:grid md:grid-cols-2 w-full "
@@ -224,13 +245,13 @@ export default function Home() {
             >
               <div className=" relative w-full h-full min-h-[45vh]">
                 <Image
-                  className="z-10 absolute px-12 md:px-24 -bottom-12 md:-bottom-20"
+                  className="z-10 absolute px-12 md:px-16 lg:px-24 -bottom-12 md:-bottom-20"
                   src={ladyWithCloths1}
                   alt=""
                 />
               </div>
               <div className="flex text-left  p-8 pt-0">
-                <p className="text-xs md:text-base  indent-4">
+                <p className="text-xs lg:text-base  indent-4">
                   {` He then spoke about this idea with his family and started “The Urban Laundry” in Rajajinagar, Bengaluru. Being a Chemical Engineer by profession and having heavy Industries background throughout his career helped him setup the store from scratch and establish great processes including Quality checks, optimal machinery utilization and by training available workforce without Laundry experience in a very quick time. He proudly says our customers love Speed with quality which has differentiated us from other players. We were industry first to offer Laundry and drycleaning in two days for no extra charge unlike others. Impressed by quality and speed many customers started coming from different areas across Bangalore. Many of our customers in fact asked us to open stores in nearby areas so that it helps their friends and Family. `}
                 </p>
               </div>
@@ -252,7 +273,7 @@ export default function Home() {
                 </p>
               </div>
               <div className="grid grid-cols-2 md:grid-cols-4 place-items-end pt-12">
-                <div className="p-2 md:p-16">
+                <div className="p-2 lg:p-16">
                   <Image
                     className="w-full aspect-square"
                     src={woolmark}
@@ -262,7 +283,7 @@ export default function Home() {
                     WOOL-SAFE MACHINERY GUARANTEED
                   </div>
                 </div>
-                <div className="p-2 md:p-16">
+                <div className="p-2 lg:p-16">
                   <Image
                     className="w-full aspect-square"
                     src={shampooImg}
@@ -274,7 +295,7 @@ export default function Home() {
                   </div>
                 </div>
 
-                <div className="p-2 md:p-16">
+                <div className="p-2 lg:p-16">
                   <Image
                     className="w-full aspect-square"
                     src={hygenicStamp}
@@ -284,7 +305,7 @@ export default function Home() {
                     HOHENSTEIN APPROVED EQUIPMENT
                   </div>
                 </div>
-                <div className="p-2 md:p-16">
+                <div className="p-2 lg:p-16">
                   <Image
                     className="w-full aspect-square rounded-2xl"
                     src={expert}
@@ -315,19 +336,23 @@ export default function Home() {
               id="Partner with Us"
             >
               <div className="">
-                <Image className="aspect-[1368/960]" src={billboard} alt="" />
+                <Image
+                  className="w-full h-full object-cover"
+                  src={billboard}
+                  alt=""
+                />
               </div>
-              <div className=" border-l-[5px] border-purple-700 flex flex-col mx-auto p-5  md:p-12 ">
+              <div className=" border-l-[5px] border-purple-700 flex flex-col mx-auto p-5  lg:p-12 ">
                 <div className="gradient_text mb-5">
-                  <p className="text-yellow-500 text-2xl md:text-3xl text-left font-bold">
+                  <p className="text-yellow-500 text-2xl lg:text-3xl text-left font-bold">
                     GET
                   </p>
-                  <p className="text-3xl md:text-5xl to-yellow-500 text-start">
+                  <p className="text-3xl lg:text-5xl to-yellow-500 text-start">
                     FRANCHISE
                   </p>
                 </div>
 
-                <p className="text-xs md:text-base text-gray-300 indent-4">
+                <p className="text-xs lg:text-base text-gray-300 indent-4">
                   Are you looking for a low-cost, high-return business
                   opportunity that can offer you flexible hours and a great
                   work-life balance? Look no further! Our company is now
@@ -349,7 +374,7 @@ export default function Home() {
                 </p>
               </div>
 
-              <p className="text-xs md:text-base text-gray-300 indent-4">
+              <p className="text-xs lg:text-base text-gray-300 indent-4">
                 Having Served thousands of customers in Laundry industry for
                 last 3 years (during and post covid), it was our customers that
                 sparked this idea in us, to expand our services to different
@@ -375,23 +400,25 @@ export default function Home() {
                 Branding, Corporate Marketing, Training workforce and any other
                 support to make the partner successful in delivering our core
                 values to customer.
+                <br />
+                <br />
+                We are proud to say that our Franchising fee is one of the
+                lowest in Industry when compared to other competitors who are
+                charging around 8 to 10 percent on Sales, whereas we ought to
+                charge just{" "}
+                <strong className="font-semibold underline decoration-indigo-500">
+                  5.49 percent
+                </strong>{" "}
+                on Gross. Additionally, We want to respect wisdom of senior
+                citizens and also help our women Entrepreneurs in establishing
+                themselves in this Industry by offering additional discount of
+                0.24 percent.
               </p>
             </div>
             <section className="grid grid-cols-1 md:grid-cols-2 text-start">
               <div className="p-8  md:pb-20 md:pl-20 border-l-4 border-purple-700 flex flex-col">
-                <p className="text-xs md:text-base text-gray-300 indent-4">
-                  We are proud to say that our Franchising fee is one of the
-                  lowest in Industry when compared to other competitors who are
-                  charging around 8 to 10 percent on Sales, whereas we ought to
-                  charge just{" "}
-                  <strong className="font-semibold underline decoration-indigo-500">
-                    5.49 percent
-                  </strong>{" "}
-                  on Gross. Additionally, We want to respect wisdom of senior
-                  citizens and also help our women Entrepreneurs in establishing
-                  themselves in this Industry by offering additional discount of
-                  0.24 percent. , <br />
-                  <br /> We believe in giving back in some shape or form to the
+                <p className="text-xs lg:text-base text-gray-300 indent-4">
+                  We believe in giving back in some shape or form to the
                   community, for example, by making a partner successful,
                   greater good is happening by giving them financial
                   freedom/additional recurring income, providing employment
@@ -409,10 +436,10 @@ export default function Home() {
                   DOWNLOAD BRAND BOOK
                 </button>
               </div>
-              <div className=" self-end flex justify-end md:mr-24">
+              <div className=" self-end flex justify-end px-20 md:px-0 md:ml-24 md:mr-4">
                 <Image
                   src={thinking_man}
-                  className="px-20 pt-20 md:pt-10 md:h-[70vh] justify-end"
+                  className="  lg:pt-10 md:h-[70vh] justify-end object-cover md:object-contain"
                   alt="thinking man"
                 />
               </div>
