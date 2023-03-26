@@ -109,7 +109,7 @@ export default function Home() {
                 </div>
               </div>
 
-              <div className="p-12 flex flex-col justify-start">
+              <div className="p-8 md:p-16 flex flex-col justify-start">
                 <div className="gradient_text">
                   <p className=" text-yellow-400 text-2xl md:text-base lg:text-2xl text-start font-medium">
                     SPECIALIZED
@@ -136,7 +136,7 @@ export default function Home() {
               </div>
             </section>
             <div className="h-2 bg-purple-700"></div>
-            <section className="p-12 md:p-16 flex flex-col">
+            <section className="p-8 md:p-16 flex flex-col">
               <h2 className=" h2 text-start text-3xl font-semibold">
                 At Urban Laundry,
               </h2>
@@ -201,7 +201,7 @@ export default function Home() {
             <div className="h-2 bg-purple-700"></div>
             <section
               id="Pricing"
-              className="pt-12 px-12 text-start grid grid-cols-1 md:grid-cols-2 border-b-8 border-purple-600"
+              className="pt-12 px-12 md:px-16 text-start grid grid-cols-1 md:grid-cols-2 border-b-8 border-purple-600"
             >
               <div className="py-4">
                 <p className="text-yellow-200 text-xl">SPECIALIZED</p>
@@ -224,7 +224,7 @@ export default function Home() {
                 alt=""
               />
             </section>
-            <div className=" p-8">
+            <div className="p-8 md:p-16">
               <h2 className="text-center gradient_text  text-xl md:text-4xl lg:text-6xl font-medium">
                 Our Story!
               </h2>
@@ -245,7 +245,7 @@ export default function Home() {
             >
               <div className=" relative w-full h-full min-h-[45vh]">
                 <Image
-                  className="z-10 absolute px-12 md:px-16 lg:px-24 -bottom-12 md:-bottom-20"
+                  className="z-10 absolute px-12 md:px-16 lg:px-28 -bottom-12 md:-bottom-20"
                   src={ladyWithCloths1}
                   alt=""
                 />
