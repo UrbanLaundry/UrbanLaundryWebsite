@@ -30,6 +30,7 @@ import landingText from "@/assets/icons/landing_page_text.png";
 import Steps from "@/Components/Steps";
 import Counter from "@/Components/Counter";
 import MetaHead from "@/Components/MetaHead";
+import procedure from "@/assets/Procedure.png";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -40,16 +41,16 @@ export default function Home() {
         <MetaHead />
         <div className="">
           <main className="">
-            <section className=" grid grid-cols-1 md:grid-cols-2 mt-20" id="">
+            <section className=" grid grid-cols-1 md:grid-cols-2" id="">
               <div className="">
                 <motion.div
                   initial={{ opacity: 0, scale: 0.5 }}
                   animate={{ opacity: 1, scale: 1 }}
                   transition={{ duration: 0.5 }}
-                  className="pt-20 px-20 md:p-32"
+                  className="p-10 md:p-28 flex justify-center "
                 >
                   <Image
-                    className=" self-center w-full"
+                    className="self-center w-full"
                     src={landingText}
                     alt="EXPERIENCE EFFORTLESS AND PRISTINE CLEAN CLOTHES WITH URBAN LAUNDRY"
                     srcSet=""
@@ -215,66 +216,16 @@ export default function Home() {
               </div>
 
               <div className=" text-left p-8 pb-8">
-                <h2 className="h2 text-2xl md:text-4xl">
-                  About Our Effortless
-                  <br /> Laundry Services
-                </h2>
-                <br />
-                <h3 className="h3"> Our Story!</h3>
+                <h2 className="h2 text-2xl md:text-4xl">Our Story!</h2>
                 <br />
 
-                <p className="text-xs">
-                  {/* Urban Laundry was founded with the goal of providing a
-                  hassle-free laundry experience to the people of the city. We
-                  understand that evervone is busy in their own lives and
-                  sometimes they don't have the time to do their laundry. This
-                  is where we come in. Our mission is to provide a convenient
-                  and efficient laundry service that makes the lives of our
-                  customers easier. We understand that every customer is unique
-                  and has their own preferences, which is why we offer a wide
-                  range of services to suit everyone's needs. Whether you need a
-                  one-time laundry service, or a weekly laundry pick-up and
-                  delivery service, we have got you covered. So why wait? Book
-                  your laundry or dry cleaning service today and experience the
-                  best in quality and convenience. We look forward to serving
-                  you soon! */}
-                  Our founder&apos;s wife had a frustrating experience with a
-                  local dry cleaning store, where her saree was held for almost
-                  10 days and the timeline was extended by another week. This
-                  sparked a fire within our founder, a man of perfection and
-                  former CEO of Nazran cements, Saudi, to research and dive deep
-                  into the laundry and dry cleaning industry. His meticulous
-                  research revealed that less than 1% of dry cleaning machinery
-                  was being utilized, with harsh chemicals not approved for
-                  laundry and dry cleaning use. Further investigation showed
-                  that many dry cleaning shops lacked proper processes and
-                  quality chemicals.
+                <br />
+
+                <p className="text-xs md:text-sm text-gray-300">
+                  {`The idea of entering laundry business started in October 2019 when our founder’s wife shared her experience with local dry-cleaning stores on the timelines, delays, damages caused and unsatisfactory output, with him. Being a NRI, having worked in many countries, he wondered about the gap or lack of advancement or quality experienced there versus, In India. This made him to think and research around Laundry and Drycleaning industry. He figured that there were less than 1% of Dry-Cleaning stores in any major city that make up to global standards by using dry cleaning machinery, other systems and processes. This <p 1% may include five-star hotels, some big laundry chains. He also figured that some were and are still using perc based machinery that is banned in United States due to the fact that, those chemicals are of carcinogenic in nature and harmful to human skin. Additionally, research showed that there is neither proper process nor good chemicals utilized by many of these Drycleaning shops. May be people think anything can be done in India or take people for granted that as long as price is maintained low, any malformed practices can be followed at backend (some of which are processing clothes at dhobi ghats, iron and deliver, usage of unnamed, unproven chemicals for dry cleaning, or just not dry cleaning at all by doing spot cleaning or spraying of some chemical and iron). A man of perfection, he wanted to change these practices within laundry industry by adapting superior process and great quality with Speed. `}
                   <br />
                   <br />
-                  Determined to bring change to the industry, our founder shared
-                  his vision with his family and launched The Urban Laundry in
-                  Rajajinagar/Bengaluru. He implemented a process that included
-                  quality checks at every step and optimal machinery utilization
-                  by quickly training a workforce without prior laundry
-                  experience. Our customers quickly fell in love with our speed
-                  and quality, and we became the industry&apos;s first to offer
-                  laundry and dry cleaning in just two days for no extra charge,
-                  setting us apart from other players in the market.
-                  <br />
-                  <br />
-                  Our passion for quality and speed quickly gained attention
-                  across Bangalore, with customers coming from all areas of the
-                  city. Many were so impressed that they requested we expand to
-                  nearby areas to help their friends and family experience our
-                  top-notch services. Today, we continue to be driven by our
-                  mission to revolutionize the laundry industry by offering
-                  superior processes and great quality with lightning speed.
-                  <br />
-                  <br />
-                  Sincerely,
-                  <br />
-                  <br />
-                  The Urban Laundry Team.
+                  {` He then spoke about this idea with his family and started “The Urban Laundry” in Rajajinagar, Bengaluru. Being a Chemical Engineer by profession and having heavy Industries background throughout his career helped him setup the store from scratch and establish great processes including Quality checks, optimal machinery utilization and by training available workforce without Laundry experience in a very quick time. He proudly says our customers love Speed with quality which has differentiated us from other players. We were industry first to offer Laundry and drycleaning in two days for no extra charge unlike others. Impressed by quality and speed many customers started coming from different areas across Bangalore. Many of our customers in fact asked us to open stores in nearby areas so that it helps their friends and Family. `}
                 </p>
               </div>
             </section>
@@ -340,14 +291,15 @@ export default function Home() {
               </div>
             </section>
             <div className="mt-4 h-2 bg-purple-500"></div>
-            <section style={{ padding: "50px" }}>
+            <section className="p-4 md:p-8">
               <h2 className="gradient_text text-left text-xl md:text-6xl font-medium">
                 A METHODICAL
               </h2>
-              <p className="gradient_text text-left pb-12 text-sm md:text-3xl">
+              <p className="gradient_text text-left pb-4 md:pb-12 text-sm md:text-3xl">
                 APPROACH TO IMPECCABLE QUALITY
               </p>
-              <Steps />
+              <Image src={procedure} alt="steps" />
+              {/* <Steps /> */}
             </section>
             <div className="mt-5 h-2 bg-purple-600"></div>
 
@@ -359,18 +311,17 @@ export default function Home() {
               <div className="">
                 <Image className="aspect-[1368/960]" src={billboard} alt="" />
               </div>
-              <div className="text-left border-l-[5px] border-purple-700 flex flex-col p-12 ">
-                <div className="gradient_text">
-                  <p className="text-yellow-500 text-3xl text-left font-bold">
+              <div className=" border-l-[5px] border-purple-700 flex flex-col mx-auto p-5  md:p-12 ">
+                <div className="gradient_text mb-5">
+                  <p className="text-yellow-500 text-2xl md:text-3xl text-left font-bold">
                     GET
                   </p>
-                  <p className="text-5xl to-yellow-500 text-start">FRANCHISE</p>
+                  <p className="text-3xl md:text-5xl to-yellow-500 text-start">
+                    FRANCHISE
+                  </p>
                 </div>
-                <h3 className="h3 text-3xl my-8 ">
-                  {" "}
-                  Attention all entrepreneurs!
-                </h3>
-                <p style={{ fontSize: "0.7em", paddingRight: "50px" }}>
+
+                <p className="text-xs md:text-xs text-gray-300">
                   Are you looking for a low-cost, high-return business
                   opportunity that can offer you flexible hours and a great
                   work-life balance? Look no further! Our company is now
@@ -386,36 +337,56 @@ export default function Home() {
               </div>
             </section>
             <section className="grid grid-cols-1 md:grid-cols-2 text-start">
-              <div className="pl-8 pt-8 pb-8 md:py-20 md:pl-20 border-l-4 border-purple-700 flex flex-col">
-                <div className="gradient_text">
+              <div className="p-8  md:py-20 md:pl-20 border-l-4 border-purple-700 flex flex-col">
+                <div className="gradient_text mb-5">
                   <p className=" to-yellow-500 text-3xl text-start font-bold">
-                    ABOUT
-                  </p>
-                  <p className="text-3xl text-yellow-500 text-start">
-                    FRANCHISE
+                    Why should you partner/Franchise with Urban Laundry?
                   </p>
                 </div>
-                <h3 className="h3 text-base font-semibold py-4">
-                  {" "}
-                  We believe in building trust with our franchisees from the
-                  very beginning.
-                </h3>
-                <p className="text-xs pr-4">
-                  As a franchisee, you&apos;ll become part of a trusted and
-                  established brand that has been providing quality laundry
-                  services for years. Our commitment to your success is evident
-                  in everything we do, from the top-of-the-line equipment and
-                  supplies we provide to the ongoing support and training we
-                  offer.
-                  <br />
-                  <br />
-                  Our franchisees are more than just business partners -
-                  they&apos;re an integral part of our company and our
-                  community. We believe in fostering a culture of collaboration
-                  and support, and we&apos;re always here to help you with any
-                  challenges you may face. Whether you need advice on running
-                  your business, help with marketing, or support with managing
-                  your finances, we&apos;re here to help.
+
+                <p className="text-xs md:text-sm text-gray-300">
+                  Having Served thousands of customers in Laundry industry for
+                  last 3 years (during and post covid), it was our customers
+                  that sparked this idea in us, to expand our services to
+                  different areas within the city. In fact, some of our
+                  customers, having liked our concept and services, expressed
+                  interest to take franchise from us, so that they can service
+                  other customers within their area. After evaluating different
+                  models and addressing some of the core issues that we
+                  anticipated may be blockers to scale in this business, we
+                  started to open up for Partners (Laundroprenuers). With Trust,
+                  Hygiene, Quality and Speed being our Core Values, we are
+                  sticking to our current model of operating Laundry and
+                  Drycleaning stores onsite/Live. We believe, this helps in
+                  building trust with our customers by providing transparency
+                  into how their clothes are getting processed right in front of
+                  them in hygienic environment, at speed. For entrepreneurs
+                  interested in partnering with us, we are right there along
+                  with them throughout their journey. We help in location
+                  appraisal, store setup (by providing state of Art machinery
+                  along with Eco friendly chemicals), CRM software (for Customer
+                  order bookings and reporting). We also handle Branding,
+                  Corporate Marketing, Training workforce and any other support
+                  to make the partner successful in delivering our core values
+                  to customer. We are proud to say that our Franchising fee is
+                  one of the lowest in Industry when compared to other
+                  competitors who are charging around 8 to 10 percent on Sales,
+                  whereas we ought to charge just 5.49 percent on Gross.
+                  Additionally, We want to respect wisdom of senior citizens and
+                  also help our women Entrepreneurs in establishing themselves
+                  in this Industry by offering additional discount of 0.24
+                  percent. We believe in giving back in some shape or form to
+                  the community, for example, by making a partner successful,
+                  greater good is happening by giving them financial
+                  freedom/additional recurring income, providing employment
+                  opportunity to partner and other staff members and also
+                  bringing quality of living in many customer&apos;s life by
+                  either saving their time with laundry so that they can focus
+                  their efforts elsewhere or by providing them quality and
+                  longevity of clothes they wear . So with help of Urban Laundry
+                  now, every person can become a Laundroprenuer by providing
+                  quality and speed to customers and also having more profits
+                  due to our lowest fees.
                 </p>
 
                 <button className="rounded-full mt-5 max-w-max">

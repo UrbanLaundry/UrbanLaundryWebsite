@@ -11,10 +11,10 @@ export default function Navbar() {
       <div className="container flex items-center justify-between mx-auto">
         <div className="flex items-center">
           <Link onClick={() => setNavActive("home")} href={"/#"}>
-            <Image className="w-44" src={logo} alt={"urban laundry"} />
+            <Image className="w-40 md:w-64" src={logo} alt={"urban laundry"} />
           </Link>
         </div>
-        <div className="flex md:order-md2">
+        <div className="flex md:order-md">
           <button
             onClick={() => {
               setNavVisible(!NavVisible);
