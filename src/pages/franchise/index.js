@@ -42,8 +42,8 @@ export default function Franchise() {
   return (
     <main>
       <section class=" text-white">
-        <div class="mx-auto max-w-screen-xl px-4 lg:flex min-h-[50vh] lg:items-center">
-          <div class="mx-auto max-w-3xl text-center">
+        <div class="mx-auto max-w-screen-xl px-4 flex min-h-[70vh] md:min-h-[50vh]  items-center ">
+          <div class="mx-auto  max-w-3xl text-center">
             <h1 class="bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 bg-clip-text text-3xl font-extrabold text-transparent sm:text-5xl">
               Start A Laundry And Drycleaning Franchise In Bengaluru
             </h1>

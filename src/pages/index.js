@@ -119,7 +119,7 @@ export default function Home() {
                   </p>
                 </div>
 
-                <p className="mt-4 text-start text-base md:text-base">
+                <p className="mt-4 text-start text-xs md:text-base">
                   • Dry Cleaning
                   <br />
                   • Laundry
@@ -232,20 +232,15 @@ export default function Home() {
               <br />
               <div className="text-xs lg:text-base indent-4">
                 {`The idea of entering laundry business started in October 2019 when our founder’s wife shared her experience with local dry-cleaning stores on the timelines, delays, damages caused and unsatisfactory output, with him. Being a NRI, having worked in many countries, he wondered about the gap or lack of advancement or quality experienced there versus, In India. This made him to think and research around Laundry and Drycleaning industry. He figured that there were less than 1% of Dry-Cleaning stores in any major city that make up to global standards by using dry cleaning machinery, other systems and processes. This <p 1% may include five-star hotels, some big laundry chains. He also figured that some were and are still using perc based machinery that is banned in United States due to the fact that, those chemicals are of carcinogenic in nature and harmful to human skin. Additionally, research showed that there is neither proper process nor good chemicals utilized by many of these Drycleaning shops. May be people think anything can be done in India or take people for granted that as long as price is maintained low, any malformed practices can be followed at backend (some of which are processing clothes at dhobi ghats, iron and deliver, usage of unnamed, unproven chemicals for dry cleaning, or just not dry cleaning at all by doing spot cleaning or spraying of some chemical and iron). A man of perfection, he wanted to change these practices within laundry industry by adapting superior process and great quality with Speed. `}
-                <br />
-                <br />
-                <p className="indent-4">
-                  {` He then spoke about this idea with his family and started “The Urban Laundry” in Rajajinagar, Bengaluru. Being a Chemical Engineer by profession and having heavy Industries background throughout his career helped him setup the store from scratch and establish great processes including Quality checks, optimal machinery utilization and by training available workforce without Laundry experience in a very quick time. He proudly says our customers love Speed with quality which has differentiated us from other players. We were industry first to offer Laundry and drycleaning in two days for no extra charge unlike others. Impressed by quality and speed many customers started coming from different areas across Bangalore. Many of our customers in fact asked us to open stores in nearby areas so that it helps their friends and Family. `}
-                </p>
               </div>
             </div>
             <section
               className=" pt-5 flex flex-col-reverse md:grid md:grid-cols-2 w-full "
               id="about"
             >
-              <div className=" relative w-full h-full min-h-[45vh]">
+              <div className="relative w-full h-full min-h-[45vh]">
                 <Image
-                  className="z-10 absolute px-12 md:px-16 lg:px-28 -bottom-12 md:-bottom-20"
+                  className="z-10 absolute px-20 lg:px-28 -bottom-12 md:-bottom-20"
                   src={ladyWithCloths1}
                   alt=""
                 />
@@ -257,7 +252,7 @@ export default function Home() {
               </div>
             </section>
             <div className=" text-center w-full  h-28  ">
-              <div className="absolute z-20 bg-black w-full px-0 md:px-12 py-6 md:py-8  text-base md:text-3xl  tracking-[0.5rem] md:tracking-[1.3rem]">
+              <div className="absolute z-20 bg-black w-full px-0 md:px-12 py-6 md:py-8  text-xs md:text-3xl  tracking-[0.3rem] md:tracking-[1.3rem]">
                 EXPERIENCE THE ULTIMATE CLEAN
               </div>
             </div>
