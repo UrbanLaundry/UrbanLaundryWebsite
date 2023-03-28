@@ -18,6 +18,8 @@ import Script from "next/script";
 export default function App({ Component, pageProps }) {
   return (
     <>
+      <MetaHead />
+      <Navbar />
       <Script
         strategy="afterInteractive"
         src="https://www.googletagmanager.com/gtag/js?id=G-2C2Q3DK4JT"
@@ -37,8 +39,6 @@ export default function App({ Component, pageProps }) {
         `,
         }}
       />
-      <MetaHead />
-      <Navbar />
       <Component {...pageProps} />
       <Footer />
     </>
