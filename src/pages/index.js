@@ -31,6 +31,7 @@ import Steps from "@/Components/Steps";
 import Counter from "@/Components/Counter";
 import MetaHead from "@/Components/MetaHead";
 import procedure from "@/assets/Procedure.png";
+import Link from "next/link";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -67,11 +68,11 @@ export default function Home() {
                       {" "}
                       PRISTINE CLEAN CLOTHES WITH
                     </p>
-                    <p className="text-2xl md:text-2xl lg:text-4xl xl:text-4xl font-bold bg-gradient-to-b from-[#72C88E] to-[#37AE8E] bg-clip-text text-transparent md:pb-4 mb-4 md:mb-4 underline decoration-2 underline-offset-4 md:underline-offset-[1rem] decoration-[#ABA63B]">
+                    <p className="pt-2 text-3xl md:text-3xl lg:text-5xl xl:text-5xl font-extrabold bg-gradient-to-b from-[#72C88E] to-[#37AE8E] bg-clip-text text-transparent md:pb-4 mb-4 md:mb-4 underline decoration-2 underline-offset-4 md:underline-offset-[1rem] decoration-[#ABA63B]">
                       {" "}
                       URBAN LAUNDRY
                     </p>
-                    <p className="text-xs md:text-base lg:text-lg xl:text-xl h3 font-semibold md:mr-12">
+                    <p className="text-xs md:text-base lg:text-lg xl:text-xl h3  md:mr-12">
                       The One-Stop Solution For Dry Cleaning, Laundry, and Steam
                       Iron Services
                     </p>
@@ -426,10 +427,11 @@ export default function Home() {
                   become a Laundroprenuer by providing quality and speed to
                   customers and also having more profits due to our lowest fees.
                 </p>
-
-                <button className="rounded-full mt-5 max-w-max">
-                  DOWNLOAD BRAND BOOK
-                </button>
+                <Link href="/franchise">
+                  <button className="rounded-full mt-5 max-w-max">
+                    Know More
+                  </button>
+                </Link>
               </div>
               <div className=" self-end flex justify-end px-20 md:px-0 md:ml-24 md:mr-4">
                 <Image
