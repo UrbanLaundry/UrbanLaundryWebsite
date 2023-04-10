@@ -9,17 +9,17 @@ import laundry_machine from "@/assets/laundry_machine.jpg";
 
 const Card = ({ title, description, icon }) => {
   return (
-    <div class="max-w-sm p-6 bg-white border border-gray-200 rounded-lg rounded-br-[30%] shadow ">
+    <div class="max-w-sm p-6 min-h-[10rem] bg-white border border-gray-200 rounded-lg rounded-br-[30%] shadow flex items-center ">
       {/* <Image
         class="w-10 h-10 mb-2 fill-white-500 bg-sky-300 rounded-full p-2 "
         src={icon}
         alt={title}
       /> */}
-      <a href="#">
-        <h5 class="capitalize mb-2 text-sm md:text-xl font-semibold tracking-tight text-gray-900 dark:text-white">
+      {/* <a href="#">
+        <h5 class="capitalize mb-2 text-sm md:text-xl font-semibold tracking-tight text-gray-900 ">
           {title.toLowerCase()}
         </h5>
-      </a>
+      </a> */}
       <p class="mb-3 text-[8px] md:text-xs font-normal text-gray-500 dark:text-gray-400">
         {description}
       </p>
@@ -114,8 +114,8 @@ export default function Franchise() {
   };
 
   return (
-    <main className="absolute top-0 left-0 w-screen min-h-screen z-40  ">
-      <div className="relative w-full h-screen bg-sky-100 pt-20 ">
+    <main className="absolute top-0 left-0 w-screen min-h-screen z-40 bg-white  ">
+      <div className="relative w-full h-screen bg-sky-900 pt-20 ">
         <svg
           id="svg"
           viewBox="0 0 1440 590"
@@ -132,15 +132,15 @@ export default function Franchise() {
           ></path>
         </svg>
 
-        <div className="h-full bg-white p-4 ">
+        <div className="min-h-full bg-white p-4 ">
           <div className="max-w-screen-lg  mx-auto min-w-1/2">
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 ">
               {ProcessingInstruction.map((item, key) => {
                 return (
                   <Card
                     key={key}
-                    title={item.title}
-                    description={item.description}
+                    title={""}
+                    description={item.title}
                     icon={item.icon}
                   />
                 );
@@ -156,8 +156,8 @@ export default function Franchise() {
                 return (
                   <Card
                     key={key}
-                    title={item.title}
-                    description={item.description}
+                    title={""}
+                    description={item.title}
                     icon={item.icon}
                   />
                 );
@@ -233,15 +233,15 @@ export default function Franchise() {
           </div>
         </div>
 
-        <div className="absolute top-0  h-full w-screen">
+        <div className="absolute top-0  h-full w-screen ">
           <div className="max-w-screen-md  mx-auto">
             <div className=" relative p-5 pt-8 md:pt-20 flex flex-col items-center justify-center   ">
-              <p className="text-[8px] md:text-base text-center text-blue-900">
+              <p className="text-[8px] md:text-base text-center text-blue-50">
                 Sed ut perspiciatis unde omnis iste natus error sit voluptatem
                 accusantium doloremque laudan, totam rem aperiam, eaque ipsa
                 quae
               </p>
-              <h2 className="md:text-4xl font-black md:py-5 text-center text-blue-900">
+              <h2 className="md:text-4xl font-black md:py-5 text-center text-blue-50">
                 Start A Laundry And Drycleaning Franchise In Bengaluru
               </h2>
               <a className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-px md:py-2 px-4 text-[8px] md:text-base rounded max-w-max">
