@@ -57,18 +57,18 @@ export default function Home() {
                     srcSet=""
                   /> */}
                   <h2>
-                    <p className="text-xs md:text-sm lg:text-base xl:text-xl   bg-gradient-to-br from-[#FBFF1D] to-[#E9FF46] bg-clip-text text-transparent tracking-widest ">
+                    <p className="text-xs md:text-sm lg:text-base   bg-gradient-to-br from-[#FBFF1D] to-[#E9FF46] bg-clip-text text-transparent tracking-widest ">
                       {" "}
                       <strong className="font-bold bg-gradient-to-br from-[#FBFF1D] to-[#E9FF46] bg-clip-text text-transparent tracking-widest ">
                         EXPERIENCE
                       </strong>{" "}
                       EFFORTLESS AND
                     </p>
-                    <p className="text-xs md:text-sm lg:text-base xl:text-xl  bg-gradient-to-b from-[#B8E66E] to-[#9CDC81] bg-clip-text text-transparent tracking-widest pt-1">
+                    <p className="text-xs md:text-sm lg:text-base  bg-gradient-to-b from-[#B8E66E] to-[#9CDC81] bg-clip-text text-transparent tracking-widest pt-1">
                       {" "}
                       PRISTINE CLEAN CLOTHES WITH
                     </p>
-                    <p className="pt-2 text-3xl md:text-3xl lg:text-5xl xl:text-5xl font-extrabold bg-gradient-to-b from-[#72C88E] to-[#37AE8E] bg-clip-text text-transparent md:pb-4 mb-4 md:mb-4 underline decoration-2 underline-offset-4 md:underline-offset-[1rem] decoration-[#ABA63B]">
+                    <p className="pt-2 text-3xl md:text-3xl lg:text-4xl font-extrabold bg-gradient-to-b from-[#72C88E] to-[#37AE8E] bg-clip-text text-transparent md:pb-4 mb-4 md:mb-4 underline decoration-2 underline-offset-4 md:underline-offset-[1rem] decoration-[#ABA63B]">
                       {" "}
                       URBAN LAUNDRY
                     </p>
@@ -120,7 +120,7 @@ export default function Home() {
                   </p>
                 </div>
 
-                <p className="mt-4 text-start text-xs md:text-base">
+                <p className="mt-4 text-start text-xs md:text-base text-justify">
                   • Dry Cleaning
                   <br />
                   • Laundry
@@ -143,60 +143,60 @@ export default function Home() {
               </h2>
               <div className="text-start text-xs md:text-base mt-2">
                 <h3 className="h3 text-xl">
-                  we offer top-notch cleaning services to keep your belongings
+                  We offer top-notch cleaning services to keep your belongings
                   looking their best.{" "}
                 </h3>
                 <br />
                 We are dedicated to providing you with the highest quality
-                laundry and cleaning services. With our commitment to
+                laundry and dry-cleaning services. With our commitment to
                 excellence, you can trust us to handle all of your laundry needs
                 with care and precision. Our team of experienced professionals
-                is equipped with the latest technology and techniques to ensure
+                are equipped with the latest technology and techniques to ensure
                 that your items are handled with the utmost care and attention.
                 Whether you need a quick refresh or a deep clean, we&apos;ve got
                 you covered. We believe that our customers deserve only the
                 best, and we strive to deliver just that with every service we
                 provide. So why wait? Let us take care of your laundry needs
-                todav!
+                today!
                 <br />
                 <br />
                 <br />
                 <strong className=" text-lime-500">
                   Laundry Service :
                 </strong>{" "}
-                Our laundry service is desianed to provide vou with a
+                Our laundry service is designed to provide vou with a
                 hassle-free and convenient solution for all vour evervdav
-                clothes. We use the latest technology and high-quality
+                clothes. We use state of art machinery and high-quality
                 detergents to ensure that your clothes are cleaned thoroughly
                 and are returned to you fresh and crisp.
                 <br />
                 <br />
                 <strong className=" text-lime-500">Dry Cleaning:</strong> Our
-                dry cleaning service is perfect for delicate fabrics that
-                require special care. Our team of experts uses a combination of
-                the latest technology and high-quality cleaning products to
-                clean your clothes, ensuring that they are returned to you in
-                pristine condition.
+                Dry Cleaning service is perfect for delicate fabrics that
+                require special care. Our team of experts examine your clothes
+                for any stains, understand about the fabric type and colors to
+                further use a combination of the latest technology and
+                high-quality cleaning products to clean your clothes, ensuring
+                that they are returned to you in pristine condition.
                 <br />
                 <br />
                 <strong className=" text-lime-500">Steam Ironing:</strong> Our
-                steam ironing service is perfect for those who want their
+                Steam Ironing service is perfect for those who want their
                 clothes to look as good as new. Our team of experts use the
-                latest steam ironing technology to remove all creases and
-                wrinkles from your clothes, leaving them looking freshly
-                pressed.
+                latest steam ironing process to remove all creases and wrinkles
+                from your clothes, leaving them looking freshly pressed. (Note:
+                Steam helps keep the fibers in place for a longer duration)
                 <br />
                 <br />
                 <br />
                 We believe in providing our customers with the best possible
-                experience. Our team of experts is trained to handle all types
-                of clothes and fabrics, ensuring that you receive the highest
-                quality of services every time. So, whether you need laundry
-                services for your everyday clothes, steam ironing for a special
-                occasion, shoe cleaning for your favorite pair of shoes, or dry
-                cleaning for your delicate fabrics, we&apos;ve got you covered.
-                Visit us today to experience the quality of our services for
-                yourself!
+                experience. Our team is trained to handle all types of clothes
+                and fabrics, ensuring that you receive the highest quality of
+                services every time. So, whether you need laundry services for
+                your everyday clothes, steam ironing for your special occasion
+                wears or dry cleaning for your delicate fabrics, we&apos;ve got
+                you covered. Visit us today to experience the quality of our
+                services for yourself!
               </div>
             </section>
             <div className="h-2 bg-purple-700"></div>
@@ -232,7 +232,7 @@ export default function Home() {
 
               <br />
               <div className="text-xs lg:text-base indent-4">
-                {`The idea of entering laundry business started in October 2019 when our founder’s wife shared her experience with local dry-cleaning stores on the timelines, delays, damages caused and unsatisfactory output, with him. Being a NRI, having worked in many countries, he wondered about the gap or lack of advancement or quality experienced there versus, In India. This made him to think and research around Laundry and Drycleaning industry. He figured that there were less than 1% of Dry-Cleaning stores in any major city that make up to global standards by using dry cleaning machinery, other systems and processes. This <p 1% may include five-star hotels, some big laundry chains. He also figured that some were and are still using perc based machinery that is banned in United States due to the fact that, those chemicals are of carcinogenic in nature and harmful to human skin. Additionally, research showed that there is neither proper process nor good chemicals utilized by many of these Drycleaning shops. May be people think anything can be done in India or take people for granted that as long as price is maintained low, any malformed practices can be followed at backend (some of which are processing clothes at dhobi ghats, iron and deliver, usage of unnamed, unproven chemicals for dry cleaning, or just not dry cleaning at all by doing spot cleaning or spraying of some chemical and iron). A man of perfection, he wanted to change these practices within laundry industry by adapting superior process and great quality with Speed. `}
+                {`The idea of entering laundry business started in October 2019 when our founder’s wife shared her experience with local dry-cleaning stores on the timelines, delays, damages caused and unsatisfactory output, with him. Being a NRI, having worked in many countries, he wondered about the gap or lack of advancement or quality experienced there versus, In India. This made him to think and research around Laundry and Drycleaning industry. He figured that there were less than 1% of Dry-Cleaning stores in any major city that make up to global standards by using dry cleaning machinery, other systems and processes. This <1% may include five-star hotels and some big laundry chains. He also figured that some were and are still using perc based machinery that is banned in United States due to the fact that, those chemicals are of carcinogenic in nature and harmful to human skin. Additionally, research showed that there is neither proper process nor good chemicals utilized by many of these Drycleaning shops. This may be because people think anything can be done in India or can take people for granted assuming that as long as price is maintained low, any malformed practices can be followed at backend (some of which we have heard and seen of are, processing clothes at dhobi ghats, iron and deliver, usage of unnamed, unproven chemicals for dry cleaning, or just spot cleaning / spraying some chemical and finish in the name of dry cleaning). A man of perfection, he wanted to change these practices within laundry industry by adapting superior process and great quality with Speed.`}
               </div>
             </div>
             <section
@@ -248,7 +248,7 @@ export default function Home() {
               </div>
               <div className="flex text-left  p-8 pt-0">
                 <p className="text-xs lg:text-base  indent-4">
-                  {` He then spoke about this idea with his family and started “The Urban Laundry” in Rajajinagar, Bengaluru. Being a Chemical Engineer by profession and having heavy Industries background throughout his career helped him setup the store from scratch and establish great processes including Quality checks, optimal machinery utilization and by training available workforce without Laundry experience in a very quick time. He proudly says our customers love Speed with quality which has differentiated us from other players. We were industry first to offer Laundry and drycleaning in two days for no extra charge unlike others. Impressed by quality and speed many customers started coming from different areas across Bangalore. Many of our customers in fact asked us to open stores in nearby areas so that it helps their friends and Family. `}
+                  {`He then spoke about this idea with his family and started “The Urban Laundry” in Rajajinagar, Bengaluru. Being a Chemical Engineer by profession and having heavy Industries background throughout his career helped him setup the store from scratch and establish great processes including Quality checks, optimal machinery utilization and training available workforce without any Laundry experience in a very quick time. He proudly says our customers love Speed with quality which has differentiated us from other players. We were industry first to offer Laundry and dry-cleaning in just two days for no extra charge unlike others. Impressed by quality and speed many customers started coming to us from different areas across Bangalore. Many of our customers in fact asked us to open stores in nearby areas so that it helps their family and friends.`}
                 </p>
               </div>
             </section>
@@ -376,7 +376,7 @@ export default function Home() {
                 sparked this idea in us, to expand our services to different
                 areas within the city. In fact, some of our customers, having
                 liked our concept and services, expressed interest to take
-                franchise from us, so that they can service other customers
+                franchise from us so that they can service other customers
                 within their area. After evaluating different models and
                 addressing some of the core issues that we anticipated may be
                 blockers to scale in this business, we started to open up for
@@ -384,18 +384,18 @@ export default function Home() {
                 Speed being our Core Values, we are sticking to our current
                 model of operating Laundry and Drycleaning stores onsite/Live.
                 We believe, this helps in building trust with our customers by
-                providing transparency into how their clothes are getting
+                providing transparency into how their clothes are being
                 processed right in front of them in hygienic environment, at
                 speed.
                 <br />
                 <br /> For entrepreneurs interested in partnering with us, we
                 are right there along with them throughout their journey. We
                 help in location appraisal, store setup (by providing state of
-                Art machinery along with Eco friendly chemicals), CRM software
-                (for Customer order bookings and reporting). We also handle
-                Branding, Corporate Marketing, Training workforce and any other
-                support to make the partner successful in delivering our core
-                values to customer.
+                Art machinery along with Eco friendly chemicals) and CRM
+                software (for Customer order bookings and reporting). We also
+                handle Branding, Corporate Marketing, Training workforce and any
+                other support to make the partner successful in delivering our
+                core values to customer.
                 <br />
                 <br />
                 We are proud to say that our Franchising fee is one of the
@@ -416,13 +416,13 @@ export default function Home() {
                 <p className="text-xs lg:text-base text-gray-300 indent-4">
                   We believe in giving back in some shape or form to the
                   community, for example, by making a partner successful,
-                  greater good is happening by giving them financial
-                  freedom/additional recurring income, providing employment
-                  opportunity to partner and other staff members and also
-                  bringing quality of living in many customer’s life by either
-                  saving their time with laundry so that they can focus their
-                  efforts elsewhere or by providing them quality and longevity
-                  of clothes they wear . <br />
+                  greater good is happening by giving them financial freedom or
+                  creating additional recurring income or providing employment
+                  opportunity to partner and other staff members and eventually
+                  bringing quality of living in many customer&apos;s life by
+                  either saving their time with laundry so that they can focus
+                  their efforts elsewhere or by providing them quality and
+                  longevity of clothes they wear . <br />
                   <br /> So with help of Urban Laundry now, every person can
                   become a Laundroprenuer by providing quality and speed to
                   customers and also having more profits due to our lowest fees.
