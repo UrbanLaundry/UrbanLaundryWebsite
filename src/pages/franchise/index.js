@@ -6,23 +6,12 @@ import LOGO from "@/assets/LOGO.png";
 import { useRouter } from "next/router";
 import Link from "next/link";
 import laundry_machine from "@/assets/laundry_machine.jpg";
+import wave_2 from "@/assets/wave_2.webp";
 
-const Card = ({ title, description, icon }) => {
+const Card = ({ title }) => {
   return (
-    <div class="max-w-sm p-6 min-h-[10rem] bg-white border border-gray-200 rounded-lg rounded-br-[30%] shadow flex items-center ">
-      {/* <Image
-        class="w-10 h-10 mb-2 fill-white-500 bg-sky-300 rounded-full p-2 "
-        src={icon}
-        alt={title}
-      /> */}
-      {/* <a href="#">
-        <h5 class="capitalize mb-2 text-sm md:text-xl font-semibold tracking-tight text-gray-900 ">
-          {title.toLowerCase()}
-        </h5>
-      </a> */}
-      <p class="mb-3 text-[8px] md:text-xs font-normal text-gray-500 dark:text-gray-400">
-        {description}
-      </p>
+    <div className="rounded-lg text-center p-10 bg-[#0D153A]">
+      <p className=" text-white font-bold lowercase">{title}</p>
     </div>
   );
 };
@@ -52,9 +41,6 @@ const ProcessingInstruction = [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     icon: laundry_machine,
   },
-];
-
-const advantages = [
   {
     title: "WE WILL HELP YOU SETUP BUSINESS END TO END",
     description:
@@ -114,31 +100,46 @@ export default function Franchise() {
   };
 
   return (
-    <main className=" -mt-6 ">
-      <div className="h-[70vh] w-full">skksjsjksjkjksjk</div>
+    <main className=" -mt-6 bg-[#151B4D]">
+      {/* <div className="h-[70vh] w-full">skksjsjksjkjksjk</div> */}
+      <div id="banner_low_gradient"></div>
       <div className="relative w-full  ">
-        {/* <Image
-          className="-mt-[70vh] h-full w-full object-cover"
-          src={billboard}
-          alt="billboard"
-        ></Image> */}
-
-        <div className="w-full ">
+        <div className="w-full bg-[#010115]">
           <div className="flex justify-center items-center z-10 ">
-            <div className="w-screen">
-              <div className="  mx-auto grid place-items-center bg-gradient-to-b from-transparent to-gray-900">
-                <h2 className="text-center text-lime-300 text-4xl">
-                  START A LAUNDRY AND DRY CLEANING
-                </h2>
-                <p className="mt-4 text-center font-bold text-4xl text-white">
-                  FRANCHISE IN BENGALURU
-                </p>
-                <button className="mt-4 rounded-full max-w-max">
-                  Learn More
-                </button>
+            <div className="w-screen ">
+              <div className="  mx-auto grid place-items-center ">
+                <div className="grid place-items-center p-10">
+                  <h5 className="text-center font-thin text-lime-300 text-4xl tracking-widest">
+                    START A LAUNDRY AND DRY CLEANING
+                  </h5>
+                  <p className="mt-4 text-center font-bold text-4xl text-white">
+                    FRANCHISE IN BENGALURU
+                  </p>
+                  <button className="mt-4 rounded-full max-w-max">
+                    Learn More
+                  </button>
+                </div>
               </div>
             </div>
           </div>
+        </div>
+
+        <div className=" bg-gradient-to-t from-transparent via-[#010115] to-[#010115]">
+          <Image
+            className=" h-full w-full object-cover"
+            src={wave_2}
+            alt="billboard"
+          ></Image>
+        </div>
+      </div>
+      <div className="max-w-screen-lg place-items-center mx-auto p-5 mt-10">
+        <h4 className="text-center font-thin text-blue-300 text-4xl tracking-widest py-24">
+          ADVANTAGES IN PARTNERING WITH US
+        </h4>
+        <div className="grid grid-cols-3 gap-10">
+          {ProcessingInstruction.map((item, index) => (
+            <Card key={index} title={item.title} />
+          ))}
         </div>
       </div>
 
@@ -149,7 +150,7 @@ export default function Franchise() {
           action=""
           class="mt-6 mb-0 space-y-4 rounded-lg p-4 shadow-lg sm:p-6 lg:p-8 bg-white "
         >
-          <h2 className="text-center text-blue-900 font-bold text-lg">
+          <h2 className="text-center text-slate-900 font-bold text-lg">
             Please fill this form for our team to reach out to you and provide
             more details
           </h2>
@@ -158,7 +159,7 @@ export default function Franchise() {
             id="name"
             type="name"
             onChange={(e) => setName(e.target.value)}
-            class="w-full rounded-lg border-gray-200 bg-transparent p-4 pr-12 text-sm shadow-sm  text-black"
+            className="w-full rounded-lg border-gray-200 bg-gray-200 p-4 pr-12 font-bold text-sm shadow-sm  text-black"
             placeholder="Enter name"
           />
 
@@ -166,21 +167,21 @@ export default function Franchise() {
             id="phone"
             type="text"
             onChange={(e) => setPhone(e.target.value)}
-            class="w-full rounded-lg border-gray-200 bg-transparent p-4 pr-12 text-sm shadow-sm  text-black"
+            className="w-full rounded-lg border-gray-200 bg-gray-200 p-4 pr-12 font-bold text-sm shadow-sm  text-black"
             placeholder="Enter phone"
           />
 
           <input
             type="email"
             onChange={(e) => setEmail(e.target.value)}
-            class="w-full rounded-lg border-gray-200 bg-transparent p-4 pr-12 text-sm shadow-sm text-black"
+            className="w-full rounded-lg border-gray-200 bg-gray-200 p-4 pr-12 font-bold text-sm shadow-sm  text-black"
             placeholder="Enter email"
           />
 
           <textarea
             type="text"
             onChange={(e) => setInterest(e.target.value)}
-            class="w-full rounded-lg border-gray-200 bg-transparent p-4 pr-12 text-sm shadow-sm  text-black"
+            className="w-full rounded-lg border-gray-200 bg-gray-200 p-4 pr-12 font-bold text-sm shadow-sm  text-black"
             placeholder="area of interest"
           />
 
