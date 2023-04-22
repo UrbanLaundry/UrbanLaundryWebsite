@@ -12,11 +12,13 @@ const Card = ({ title, index, count }) => {
   return (
     <div
       className={
-        " rounded-lg text-center p-10 bg-[#0D153A] col-span-2 flex justify-center items-center " +
-        (index === count - 2 ? " col-start-2" : "")
+        " rounded-lg text-center p-5 md:p-10 bg-[#0D153A] col-span-3 md:col-span-2 flex justify-center items-center " +
+        (index === count - 2 ? " md:col-start-2" : "")
       }
     >
-      <p className={" text-white font-bold lowercase text-2xl  "}>{title}</p>
+      <p className={" text-white font-bold lowercase text-xs md:text-2xl  "}>
+        {title}
+      </p>
     </div>
   );
 };
@@ -113,14 +115,14 @@ export default function Franchise() {
           <div className="flex justify-center items-center z-10 ">
             <div className="w-screen ">
               <div className="  mx-auto grid place-items-center ">
-                <div className="grid place-items-center p-10">
-                  <h5 className="text-center font-thin text-lime-300 text-4xl tracking-widest">
+                <div className="grid place-items-center py-20">
+                  <h5 className="text-center font-thin text-lime-300 text-sm md:text-4xl tracking-widest">
                     START A LAUNDRY AND DRY CLEANING
                   </h5>
-                  <p className="mt-4 text-center font-bold text-4xl text-white">
+                  <p className="mt-4 text-center font-bold md:text-4xl text-white">
                     FRANCHISE IN BENGALURU
                   </p>
-                  <button className="mt-4 rounded-full max-w-max">
+                  <button className="mt-4 rounded-full max-w-max text-xs md:text-base">
                     Learn More
                   </button>
                 </div>
@@ -138,10 +140,10 @@ export default function Franchise() {
         </div>
       </div>
       <div className="max-w-screen-lg place-items-center mx-auto p-5 mt-10">
-        <h4 className="text-center font-thin text-blue-300 text-4xl tracking-widest py-24">
+        <h4 className="text-center font-thin text-blue-300 text-sm md:text-4xl tracking-widest py-5 md:py-24">
           ADVANTAGES IN PARTNERING WITH US
         </h4>
-        <div className="grid grid-cols-6 gap-10">
+        <div className="grid grid-cols-6 gap-3 md:gap-10">
           {ProcessingInstruction.map((item, index) => (
             <Card
               key={index}
@@ -155,10 +157,10 @@ export default function Franchise() {
 
       {/* write a dive with blue to transparent gradient up to down in tailwind  */}
       {/* contact from */}
-      <div className="mx-auto max-w-lg py-10 ">
+      <div className="mx-auto max-w-lg py-5 md:py-10  ">
         <form
           action=""
-          class="mt-6 mb-0 space-y-4 rounded-lg p-4 shadow-lg sm:p-6 lg:p-8 bg-white "
+          class="m-5 mt-6 mb-0 space-y-4 rounded-lg p-4 shadow-lg sm:p-6 lg:p-8 bg-white "
         >
           <h2 className="text-center text-slate-900 font-bold text-lg">
             Please fill this form for our team to reach out to you and provide
@@ -208,7 +210,7 @@ export default function Franchise() {
           </button>
         </form>
 
-        <p className="text-center py-5 text-blue-900">or</p>
+        <p className="text-center py-5 text-slate-100 font-extrabold">or</p>
         <div className="flex justify-center">
           <a
             href="tel:+916362591993"
