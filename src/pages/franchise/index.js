@@ -8,10 +8,15 @@ import Link from "next/link";
 import laundry_machine from "@/assets/laundry_machine.jpg";
 import wave_2 from "@/assets/wave_2.webp";
 
-const Card = ({ title }) => {
+const Card = ({ title, index, count }) => {
   return (
-    <div className="rounded-lg text-center p-10 bg-[#0D153A]">
-      <p className=" text-white font-bold lowercase">{title}</p>
+    <div
+      className={
+        " rounded-lg text-center p-10 bg-[#0D153A] col-span-2 flex justify-center items-center " +
+        (index === count - 2 ? " col-start-2" : "")
+      }
+    >
+      <p className={" text-white font-bold lowercase text-2xl  "}>{title}</p>
     </div>
   );
 };
@@ -126,7 +131,7 @@ export default function Franchise() {
 
         <div className=" bg-gradient-to-t from-transparent via-[#010115] to-[#010115]">
           <Image
-            className=" h-full w-full object-cover"
+            className=" h-full w-full object-contain"
             src={wave_2}
             alt="billboard"
           ></Image>
@@ -136,16 +141,21 @@ export default function Franchise() {
         <h4 className="text-center font-thin text-blue-300 text-4xl tracking-widest py-24">
           ADVANTAGES IN PARTNERING WITH US
         </h4>
-        <div className="grid grid-cols-3 gap-10">
+        <div className="grid grid-cols-6 gap-10">
           {ProcessingInstruction.map((item, index) => (
-            <Card key={index} title={item.title} />
+            <Card
+              key={index}
+              index={index}
+              title={item.title}
+              count={ProcessingInstruction.length}
+            />
           ))}
         </div>
       </div>
 
       {/* write a dive with blue to transparent gradient up to down in tailwind  */}
       {/* contact from */}
-      <div className="mx-auto max-w-lg  ">
+      <div className="mx-auto max-w-lg py-10 ">
         <form
           action=""
           class="mt-6 mb-0 space-y-4 rounded-lg p-4 shadow-lg sm:p-6 lg:p-8 bg-white "
@@ -190,8 +200,8 @@ export default function Franchise() {
             disabled={!BtnActive}
             onClick={handleSubmit}
             class={
-              "block w-full rounded-lg  px-5 py-2 text-sm font-medium border-transparent text-white " +
-              (BtnActive ? "bg-indigo-600" : "bg-gray-400")
+              "block w-full rounded-lg font-bold  px-5 py-2 text-sm max-w-max mx-auto border-transparent text-white " +
+              (BtnActive ? "bg-[#24006B]" : "bg-gray-400")
             }
           >
             Submit to get a callback
@@ -202,7 +212,7 @@ export default function Franchise() {
         <div className="flex justify-center">
           <a
             href="tel:+916362591993"
-            class="  font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 bg-blue-600 hover:bg-primary-700 focus:outline-none focus:ring-primary-800"
+            class="rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 text-black font-bold bg-white hover:bg-primary-700 focus:outline-none focus:ring-primary-800"
           >
             Call Us
           </a>
