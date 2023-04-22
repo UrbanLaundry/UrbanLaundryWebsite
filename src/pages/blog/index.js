@@ -16,7 +16,7 @@ export default function Blogs({ blogs }) {
     return LOGO;
   };
   return (
-    <main>
+    <main className="-mt-6">
       <MetaHead title="Blogs | Urban Laundry" />
       <section className=" min-h-screen pt-20 pb-10 lg:pt-[120px] lg:pb-20 text-start bg-slate-800">
         <div className="container mx-auto">

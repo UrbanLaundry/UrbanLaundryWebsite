@@ -1,4 +1,7 @@
+// "start": "NODE_ENV=production node server.js"
+
 // server.js
+
 const { createServer } = require("http");
 const { parse } = require("url");
 const next = require("next");

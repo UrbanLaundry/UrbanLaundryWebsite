@@ -348,7 +348,7 @@ export default function Home() {
                   </p>
                 </div>
 
-                <p className="text-xs lg:text-base text-gray-300 indent-4">
+                <p className="text-xs lg:text-base text-gray-300 indent-4 text-justify">
                   Are you looking for a low-cost, high-return business
                   opportunity that can offer you flexible hours and a great
                   work-life balance? Look no further! Our company is now
@@ -370,7 +370,7 @@ export default function Home() {
                 </p>
               </div>
 
-              <p className="text-xs lg:text-base text-gray-300 indent-4">
+              <p className="text-xs lg:text-base text-gray-300 indent-4 text-justify">
                 Having Served thousands of customers in Laundry industry for
                 last 3 years (during and post covid), it was our customers that
                 sparked this idea in us, to expand our services to different
@@ -413,7 +413,7 @@ export default function Home() {
             </div>
             <section className="grid grid-cols-1 md:grid-cols-2 text-start">
               <div className="p-8  md:pb-20 md:pl-20 border-l-4 border-purple-700 flex flex-col">
-                <p className="text-xs lg:text-base text-gray-300 indent-4">
+                <p className="text-xs lg:text-base text-gray-300 indent-4 text-justify">
                   We believe in giving back in some shape or form to the
                   community, for example, by making a partner successful,
                   greater good is happening by giving them financial freedom or
