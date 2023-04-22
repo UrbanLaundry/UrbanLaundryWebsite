@@ -120,7 +120,7 @@ export default function Home() {
                   </p>
                 </div>
 
-                <p className="mt-4 text-start text-xs md:text-base text-justify">
+                <p className="mt-4  text-xs md:text-base text-justify">
                   • Dry Cleaning
                   <br />
                   • Laundry
@@ -141,7 +141,7 @@ export default function Home() {
               <h2 className=" h2 text-start text-3xl font-semibold">
                 At Urban Laundry,
               </h2>
-              <div className="text-start text-xs md:text-base mt-2">
+              <div className=" text-xs md:text-base mt-2 text-justify">
                 <h3 className="h3 text-xl">
                   We offer top-notch cleaning services to keep your belongings
                   looking their best.{" "}
@@ -231,7 +231,7 @@ export default function Home() {
               </h2>
 
               <br />
-              <div className="text-xs lg:text-base indent-4">
+              <div className="text-xs lg:text-base indent-4 text-justify">
                 {`The idea of entering laundry business started in October 2019 when our founder’s wife shared her experience with local dry-cleaning stores on the timelines, delays, damages caused and unsatisfactory output, with him. Being a NRI, having worked in many countries, he wondered about the gap or lack of advancement or quality experienced there versus, In India. This made him to think and research around Laundry and Drycleaning industry. He figured that there were less than 1% of Dry-Cleaning stores in any major city that make up to global standards by using dry cleaning machinery, other systems and processes. This <1% may include five-star hotels and some big laundry chains. He also figured that some were and are still using perc based machinery that is banned in United States due to the fact that, those chemicals are of carcinogenic in nature and harmful to human skin. Additionally, research showed that there is neither proper process nor good chemicals utilized by many of these Drycleaning shops. This may be because people think anything can be done in India or can take people for granted assuming that as long as price is maintained low, any malformed practices can be followed at backend (some of which we have heard and seen of are, processing clothes at dhobi ghats, iron and deliver, usage of unnamed, unproven chemicals for dry cleaning, or just spot cleaning / spraying some chemical and finish in the name of dry cleaning). A man of perfection, he wanted to change these practices within laundry industry by adapting superior process and great quality with Speed.`}
               </div>
             </div>
@@ -247,7 +247,7 @@ export default function Home() {
                 />
               </div>
               <div className="flex text-left  p-8 pt-0">
-                <p className="text-xs lg:text-base  indent-4">
+                <p className="text-xs lg:text-base  indent-4 text-justify">
                   {`He then spoke about this idea with his family and started “The Urban Laundry” in Rajajinagar, Bengaluru. Being a Chemical Engineer by profession and having heavy Industries background throughout his career helped him setup the store from scratch and establish great processes including Quality checks, optimal machinery utilization and training available workforce without any Laundry experience in a very quick time. He proudly says our customers love Speed with quality which has differentiated us from other players. We were industry first to offer Laundry and dry-cleaning in just two days for no extra charge unlike others. Impressed by quality and speed many customers started coming to us from different areas across Bangalore. Many of our customers in fact asked us to open stores in nearby areas so that it helps their family and friends.`}
                 </p>
               </div>

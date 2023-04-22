@@ -131,6 +131,10 @@ body {
   background-image: linear-gradient(to left, rgb(31, 0, 71) 5%, rgb(4, 4, 61) 30%, rgb(2, 0, 33) 70%);
 }
 
+p {
+  text-align: justify;
+}
+
 .sinhala_font {
   font-family: 'Abhaya Libre', serif;
 }
