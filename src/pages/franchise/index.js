@@ -16,7 +16,7 @@ const Card = ({ title, index, count }) => {
         (index === count - 2 ? " md:col-start-2" : "")
       }
     >
-      <p className={" text-white font-bold lowercase text-xs md:text-2xl  "}>
+      <p className={" text-white font-bold capitalize  text-xs md:text-xl  "}>
         {title}
       </p>
     </div>
@@ -25,49 +25,49 @@ const Card = ({ title, index, count }) => {
 
 const ProcessingInstruction = [
   {
-    title: "ZERO RISK, LOW INVESTMENT, HIGH RETURN BUSINESS",
+    title: "Zero risk, low inventory, high return business",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     icon: laundry_machine,
   },
   {
-    title: "14-23 LAKHS INVESTMENT WITH 30-40% RETURN",
+    title: "14-23 lakhs investment with 30-40% return",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     icon: laundry_machine,
   },
   {
-    title: "BREAKEVEN IN 12-18 MONTHS",
+    title: " Breakeven in 12-18 months",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     icon: laundry_machine,
   },
   {
-    title: "PROFITABLE AND RECURRING INCOME BUSINESS",
+    title: "Profitable and recurring income business",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     icon: laundry_machine,
   },
   {
-    title: "WE WILL HELP YOU SETUP BUSINESS END TO END",
+    title: " We will help you setup business end to end",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     icon: laundry_machine,
   },
   {
-    title: "WE DO DIGITAL MARKETING FOR YOU",
+    title: " We do digital marketing for you",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     icon: laundry_machine,
   },
   {
-    title: "ZERO ROYALTY FOR FIRST 6 MONTHS",
+    title: " Zero royalty for first 6 months",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     icon: laundry_machine,
   },
   {
-    title: "LOWEST FRANCHISE AND ROYALTY FEES IN MARKET ",
+    title: "Lowest franchise and royalty fees in market",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     icon: laundry_machine,
@@ -122,9 +122,11 @@ export default function Franchise() {
                   <p className="mt-4 text-center font-bold md:text-4xl text-white">
                     FRANCHISE IN BENGALURU
                   </p>
-                  <button className="mt-4 rounded-full max-w-max text-xs md:text-base">
-                    Learn More
-                  </button>
+                  <Link href={"/"}>
+                    <button className="mt-4 rounded-full max-w-max text-xs md:text-base">
+                      Learn More
+                    </button>
+                  </Link>
                 </div>
               </div>
             </div>
