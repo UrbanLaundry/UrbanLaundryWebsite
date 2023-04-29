@@ -85,7 +85,7 @@ export default function Home() {
             </section>
             <Image
               src={wave2}
-              className="-mt-[4rem] md:-mt-32 lg:-mt-44 xl:-mt-[230px]"
+              className="-mt-[5rem] md:-mt-32 lg:-mt-44 xl:-mt-[230px]"
               alt=""
               priority
             />
@@ -164,8 +164,8 @@ export default function Home() {
                 <strong className=" text-lime-500">
                   Laundry Service :
                 </strong>{" "}
-                Our laundry service is designed to provide vou with a
-                hassle-free and convenient solution for all vour evervdav
+                Our laundry service is designed to provide you with a
+                hassle-free and convenient solution for all vour everyday
                 clothes. We use state of art machinery and high-quality
                 detergents to ensure that your clothes are cleaned thoroughly
                 and are returned to you fresh and crisp.
@@ -225,7 +225,7 @@ export default function Home() {
                 alt=""
               />
             </section>
-            <div className="p-8 md:p-16">
+            <div id="about" className="p-8 md:p-16">
               <h2 className="text-center gradient_text  text-xl md:text-4xl lg:text-6xl font-medium">
                 Our Story!
               </h2>
@@ -235,10 +235,7 @@ export default function Home() {
                 {`The idea of entering laundry business started in October 2019 when our founder’s wife shared her experience with local dry-cleaning stores on the timelines, delays, damages caused and unsatisfactory output, with him. Being a NRI, having worked in many countries, he wondered about the gap or lack of advancement or quality experienced there versus, In India. This made him to think and research around Laundry and Drycleaning industry. He figured that there were less than 1% of Dry-Cleaning stores in any major city that make up to global standards by using dry cleaning machinery, other systems and processes. This <1% may include five-star hotels and some big laundry chains. He also figured that some were and are still using perc based machinery that is banned in United States due to the fact that, those chemicals are of carcinogenic in nature and harmful to human skin. Additionally, research showed that there is neither proper process nor good chemicals utilized by many of these Drycleaning shops. This may be because people think anything can be done in India or can take people for granted assuming that as long as price is maintained low, any malformed practices can be followed at backend (some of which we have heard and seen of are, processing clothes at dhobi ghats, iron and deliver, usage of unnamed, unproven chemicals for dry cleaning, or just spot cleaning / spraying some chemical and finish in the name of dry cleaning). A man of perfection, he wanted to change these practices within laundry industry by adapting superior process and great quality with Speed.`}
               </div>
             </div>
-            <section
-              className=" pt-5 flex flex-col-reverse md:grid md:grid-cols-2 w-full "
-              id="about"
-            >
+            <section className=" pt-5 flex flex-col-reverse md:grid md:grid-cols-2 w-full ">
               <div className="relative w-full h-full min-h-[45vh]">
                 <Image
                   className="z-10 absolute px-20 lg:px-28 -bottom-12 md:-bottom-20"
