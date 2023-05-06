@@ -165,7 +165,7 @@ export default function Home() {
                   Laundry Service :
                 </strong>{" "}
                 Our laundry service is designed to provide you with a
-                hassle-free and convenient solution for all vour everyday
+                hassle-free and convenient solution for all your everyday
                 clothes. We use state of art machinery and high-quality
                 detergents to ensure that your clothes are cleaned thoroughly
                 and are returned to you fresh and crisp.
@@ -217,7 +217,12 @@ export default function Home() {
                   </h2>
                 </div>
                 <p> with our wash and fold option </p>
-                <button className="mt-12 rounded-full">SCHEDULE PICK UP</button>
+                <a href="tel:+916362591993">
+                  {" "}
+                  <button className="mt-12 rounded-full">
+                    SCHEDULE PICK UP
+                  </button>
+                </a>
               </div>
               <Image
                 className="relative self-end"
@@ -232,7 +237,7 @@ export default function Home() {
 
               <br />
               <div className="text-xs lg:text-base indent-4 text-justify">
-                {`The idea of entering laundry business started in October 2019 when our founder’s wife shared her experience with local dry-cleaning stores on the timelines, delays, damages caused and unsatisfactory output, with him. Being a NRI, having worked in many countries, he wondered about the gap or lack of advancement or quality experienced there versus, In India. This made him to think and research around Laundry and Drycleaning industry. He figured that there were less than 1% of Dry-Cleaning stores in any major city that make up to global standards by using dry cleaning machinery, other systems and processes. This <1% may include five-star hotels and some big laundry chains. He also figured that some were and are still using perc based machinery that is banned in United States due to the fact that, those chemicals are of carcinogenic in nature and harmful to human skin. Additionally, research showed that there is neither proper process nor good chemicals utilized by many of these Drycleaning shops. This may be because people think anything can be done in India or can take people for granted assuming that as long as price is maintained low, any malformed practices can be followed at backend (some of which we have heard and seen of are, processing clothes at dhobi ghats, iron and deliver, usage of unnamed, unproven chemicals for dry cleaning, or just spot cleaning / spraying some chemical and finish in the name of dry cleaning). A man of perfection, he wanted to change these practices within laundry industry by adapting superior process and great quality with Speed.`}
+                {`The idea of entering laundry business started in October 2019 when our founder’s wife shared her experience about local dry-cleaning stores on the timelines, delays, damages caused and unsatisfactory output, with him. Being a NRI, having worked in many countries, he wondered about the gap or lack of advancement or quality experienced outside the country vs India. This made him to think and research around Laundry and Drycleaning industry. He figured that there were less than 1% of Dry-Cleaning stores in any major city that make up to global standards by using dry cleaning machinery, other systems and processes. This <1% may include five-star hotels and some big laundry chains. He also figured that some were and are still using perc based machinery that is banned in United States due to the fact that, those chemicals are of carcinogenic in nature and harmful to human skin. Additionally, research showed that there is neither proper process nor good chemicals utilized by many of these Drycleaning shops. This may be because people think anything can be done in India or can take people for granted assuming that as long as price is maintained low, any malformed practices can be followed in backend (some of which we have heard and seen of are, processing clothes at dhobi ghats, iron and deliver, usage of unnamed, unproven chemicals for dry cleaning, or just spot cleaning / spraying some chemical and finish in the name of dry cleaning). A man of perfection, he wanted to change these practices within laundry industry by adapting superior process and great quality with Speed.`}
               </div>
             </div>
             <section className=" pt-5 flex flex-col-reverse md:grid md:grid-cols-2 w-full ">
@@ -358,6 +363,11 @@ export default function Home() {
                   support, and resources you need to make your franchise a
                   success, including ongoing marketing and advertising support.
                 </p>
+                <Link href="/franchise">
+                  <button className="rounded-full mt-5 max-w-max">
+                    Know More
+                  </button>
+                </Link>
               </div>
             </section>
             <div className="p-8  md:pt-20 md:pl-20 border-l-4 border-purple-700 flex flex-col">
@@ -400,7 +410,7 @@ export default function Home() {
                 charging around 8 to 10 percent on Sales, whereas we ought to
                 charge just{" "}
                 <strong className="font-semibold underline decoration-indigo-500">
-                  5.49 percent
+                  5.49 %
                 </strong>{" "}
                 on Gross. Additionally, We want to respect wisdom of senior
                 citizens and also help our women Entrepreneurs in establishing
@@ -424,11 +434,6 @@ export default function Home() {
                   become a Laundroprenuer by providing quality and speed to
                   customers and also having more profits due to our lowest fees.
                 </p>
-                <Link href="/franchise">
-                  <button className="rounded-full mt-5 max-w-max">
-                    Know More
-                  </button>
-                </Link>
               </div>
               <div className=" self-end flex justify-end px-20 md:px-0 md:ml-24 md:mr-4">
                 <Image

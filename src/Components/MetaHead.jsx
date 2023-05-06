@@ -15,7 +15,7 @@ export default function MetaHead({
       <meta name="description" content={description} />
       <meta
         name="keywords"
-        content="The Uran Laundry services, Best laundry services in rajajinagar, Laundry services near me, best laundry services near me, rajajinagar laundry services, top laundry services in rajajinagar, dry cleaning services near me, dry cleaning services bangalore, bangalore laundry services"
+        content="The Urban Laundry services, Best laundry services in rajajinagar, Laundry services near me, best laundry services near me, rajajinagar laundry services, top laundry services in rajajinagar, dry cleaning services near me, dry cleaning services bangalore, bangalore laundry services, best laundry in India, Best laundry in Bangalore, Best laundry franchise in India, Low cost laundry franchise in india, Best dry cleaning franchise in india"
       />
       <meta name="robots" content="index, follow" />
       <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />

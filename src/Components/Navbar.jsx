@@ -59,8 +59,8 @@ export default function Navbar() {
                 <span
                   className={
                     NavActive.match("home")
-                      ? "text-white border-b"
-                      : "text-slate-500"
+                      ? "text-white  font-bold border-b"
+                      : "text-slate-300"
                   }
                 >
                   Home
@@ -76,8 +76,8 @@ export default function Navbar() {
                 <span
                   className={
                     NavActive.match("about")
-                      ? "text-white border-b"
-                      : "text-slate-500"
+                      ? "text-white  font-bold border-b"
+                      : "text-slate-300"
                   }
                 >
                   {" "}
@@ -94,8 +94,8 @@ export default function Navbar() {
                 <span
                   className={
                     NavActive.match("Pricing")
-                      ? "text-white border-b"
-                      : "text-slate-500"
+                ? "text-white  font-bold border-b"
+                      : "text-slate-300"
                   }
                 >
                   {" "}
@@ -112,8 +112,8 @@ export default function Navbar() {
                 <span
                   className={
                     NavActive.match("Partner with Us")
-                      ? "text-white border-b"
-                      : "text-slate-500"
+                      ? "text-white  font-bold border-b"
+                      : "text-slate-300"
                   }
                 >
                   Partner with Us
@@ -129,8 +129,8 @@ export default function Navbar() {
                 <span
                   className={
                     NavActive.match("blog")
-                      ? "text-white border-b"
-                      : "text-slate-500"
+                      ? "text-white  font-bold border-b"
+                      : "text-slate-300"
                   }
                 >
                   Blog
@@ -146,8 +146,8 @@ export default function Navbar() {
                 <span
                   className={
                     NavActive.match("contact")
-                      ? "text-white border-b"
-                      : "text-slate-500"
+                      ? "text-white  font-bold border-b"
+                      : "text-slate-300"
                   }
                 >
                   Contact
