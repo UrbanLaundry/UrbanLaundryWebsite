@@ -48,7 +48,7 @@ export default function Blogs({ blogs }) {
                     <div className="mb-8 overflow-hidden rounded bg-slate-900">
                       <Image
                         width={200}
-                        height={200}
+                        height={100}
                         src={getImgUrl(blog?.thumbnail)}
                         alt="image"
                         className="w-full aspect-video object-contain px-6"
@@ -56,10 +56,10 @@ export default function Blogs({ blogs }) {
                     </div>
                     <div className="p-4">
                       <span className="bg-blue-500 mb-5 inline-block rounded py-1 px-4 text-center text-xs font-semibold leading-loose text-white">
-                        {moment(blog?.pubDate).format("do MMM, YYYY")}
+                        {moment(blog?.pubDate).format("Do MMM, YYYY")}
                       </span>
                       <div>
-                        <div className="text-dark hover:text-blue-500 mb-4 inline-block text-base font-semibold">
+                        <div className="text-dark hover:text-blue-500 mb-4 inline-block text-base font-bold">
                           {blog?.title}
                         </div>
                       </div>
@@ -67,7 +67,7 @@ export default function Blogs({ blogs }) {
                         {blog.categories.map((it, i) => (
                           <p
                             key={i}
-                            className="max-w-max pr-2 text-sm bg-gray-200 px-3 py-1 rounded-full text-black"
+                            className="max-w-max pr-2 text-sm bg-gray-700 px-3 py-1 rounded-full text-white"
                           >
                             {it}
                           </p>

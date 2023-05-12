@@ -12,11 +12,15 @@ const Card = ({ title, index, count }) => {
   return (
     <div
       className={
-        " rounded-lg text-center p-5 md:p-10   bg-gradient-to-br from-[#FBFF1D] to-[#E9FF46] col-span-3 md:col-span-2 flex justify-center items-center " +
+        "h-[30vh] rounded-3xl text-center p-5 md:p-10   bg-gradient-to-br from-[#5AA785] to-[#E9FF46] col-span-3 md:col-span-2 flex justify-center items-center " +
         (index === count - 2 ? " md:col-start-2" : "")
       }
     >
-      <p className={" text-black font-bold capitalize  text-xs md:text-xl  "}>
+      <p
+        className={
+          " text-gray-800 font-black capitalize  text-xs md:text-2xl  "
+        }
+      >
         {title}
       </p>
     </div>
@@ -116,10 +120,10 @@ export default function Franchise() {
             <div className="w-screen ">
               <div className="  mx-auto grid place-items-center ">
                 <div className="grid place-items-center py-20">
-                  <h5 className="text-center font-thin text-lime-300 text-sm md:text-4xl tracking-widest">
+                  <h5 className="text-center font-thin text-lime-300 text-sm md:text-2xl lg:text-4xl tracking-widest">
                     START A LAUNDRY AND DRY CLEANING
                   </h5>
-                  <p className="mt-4 text-center font-bold md:text-5xl text-white">
+                  <p className="mt-4 text-center font-bold md:text-5xl lg:text-7xl text-white tracking-widest">
                     FRANCHISE TODAY
                   </p>
                   {/* <Link href={"/"}>
@@ -145,7 +149,7 @@ export default function Franchise() {
         <h4 className="text-center font-normal text-white text-sm md:text-4xl tracking-widest py-5 md:py-24">
           ADVANTAGES IN PARTNERING WITH US
         </h4>
-        <div className="grid grid-cols-6 gap-3 md:gap-10">
+        <div className="grid grid-cols-6 gap-1 md:gap-5">
           {ProcessingInstruction.map((item, index) => (
             <Card
               key={index}
